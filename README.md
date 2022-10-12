@@ -8,7 +8,7 @@ Nama anggota kelompok:
 | 2106635985 | Savero Arkabuana |
 | 2106651061 | Soraya Sabrina |
 | 2106752073 | Muhammad Irsyad Mufid |
-| isi | Ied Mubaraque Sultan Salahuddine El Ayyubie |
+| 2106751120 | Ied Mubaraque Sultan Salahuddine El Ayyubie |
 
 ### [Link Aplikasi](https://jelajah-indonesia.herokuapp.com)
 
