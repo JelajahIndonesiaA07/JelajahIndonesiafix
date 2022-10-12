@@ -1,62 +1,29 @@
-# Template Proyek Django PBP
+# Jelajah-Indonesia
+## Tugas Kelompok PBP A07
 
-Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
+Nama anggota kelompok:
+| NPM | Nama |
+|---|---|
+| 2106751171 | Muhammad Rafialy Farrel |
+| 2106635985 | Savero Arkabuana |
+| 2106651061 | Soraya Sabrina |
+| 2106752073 | Muhammad Irsyad Mufid |
+| isi | Ied Mubaraque Sultan Salahuddine El Ayyubie |
 
-*Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
+Pada project PBP ini, kelompok kami membuat sebuah website bernama Jelajah Indonesia yang berisi segala informasi dan hal yang dapat dilakukan oleh partisipan dari berbagai negara yang ingin mengisi waktu selama rangkaian acara G20 berlangsung.
 
-## Pendahuluan
+Website ini berisikan:
 
-Repositori ini merupakan sebuah template yang dirancang untuk membantu mahasiswa yang sedang mengambil mata kuliah Pemrograman Berbasis Platform (CSGE602022) mengetahui struktur sebuah proyek aplikasi Django serta file dan konfigurasi yang penting dalam berjalannya aplikasi. Kamu dapat dengan bebas menyalin isi dari repositori ini atau memanfaatkan repositori ini sebagai pembelajaran sekaligus awalan dalam membuat sebuah proyek Django.
+- Home Page (Untuk user yang belum login account)
+- Form Registrasi
+- Home Page (untuk user yang sudah login account)
 
-## Cara Menggunakan
+Orang yang mengunjungi website ini pertama-tama ditampilkan tempat wisata yang beragam di Indonesia. pertama-tama dapat mengetahui dari kuesioner sederhana apakah pengunjung memiliki covid atau tidak, dan jika iya, kita dapat mengerahkan mereka pada lokasi tes swab terdekat. Selain itu pengunjung juga dapat meilihat berbagai informasi mengenai ISOMAN dan apa yang harus dilakukan saat terjadi terjangkit virus COVID-19.
 
-Apabila kamu ingin menggunakan repositori ini sebagai repositori awalan yang nantinya akan kamu modifikasi:
-
-1. Buka laman GitHub repositori templat kode, lalu klik tombol "**Use this template**"
-   untuk membuat salinan repositori ke dalam akun GitHub milikmu.
-2. Buka laman GitHub repositori yang dibuat dari templat, lalu gunakan perintah
-   `git clone` untuk menyalin repositorinya ke suatu lokasi di dalam sistem
-   berkas (_filesystem_) komputermu:
-
-   ```shell
-   git clone <URL ke repositori di GitHub> <path ke suatu lokasi di filesystem>
-   ```
-3. Masuk ke dalam repositori yang sudah di-_clone_ dan jalankan perintah berikut
-   untuk menyalakan _virtual environment_:
-
-   ```shell
-   python -m venv env
-   ```
-4. Nyalakan environment dengan perintah berikut:
-
-   ```shell
-   # Windows
-   .\env\Scripts\activate
-   # Linux/Unix, e.g. Ubuntu, MacOS
-   source env/bin/activate
-   ```
-5. Install dependencies yang dibutuhkan untuk menjalankan aplikasi dengan perintah berikut:
-
-   ```shell
-   pip install -r requirements.txt
-   ```
-
-6. Jalankan aplikasi Django menggunakan server pengembangan yang berjalan secara
-   lokal:
-
-   ```shell
-   python manage.py runserver
-   ```
-7. Bukalah `http://localhost:8000` pada browser favoritmu untuk melihat apakah aplikasi sudah berjalan dengan benar.
-
-## Contoh Deployment 
-
-Pada template ini, deployment dilakukan dengan memanfaatkan GitHub Actions sebagai _runner_ dan Heroku sebagai platform Hosting aplikasi. 
-
-Untuk melakukan deployment, kamu dapat melihat instruksi yang ada pada [Tutorial 0](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tutorial/tutorial-0).
-
-Untuk contoh aplikasi Django yang sudah di deploy, dapat kamu akses di [https://django-pbp-template.herokuapp.com/](https://django-pbp-template.herokuapp.com/)
-
-## Credits
-
-Template ini dibuat berdasarkan [PBP Ganjil 2021](https://gitlab.com/PBP-2021/pbp-lab) yang ditulis oleh Tim Pengajar Pemrograman Berbasis Platform 2021 ([@prakashdivyy](https://gitlab.com/prakashdivyy)) dan [django-template-heroku](https://github.com/laymonage/django-template-heroku) yang ditulis oleh [@laymonage, et al.](https://github.com/laymonage). Template ini dirancang sedemikian rupa sehingga mahasiswa dapat menjadikan template ini sebagai awalan serta acuan dalam mengerjakan tugas maupun dalam berkarya.
+- Kuisioner Data User
+- Rumah sakit di daerah mu untuk test swab
+- Do and Dont
+- Kontak rumah sakit
+- Panduan ISOMAN
+- Tempat Jualan Persediaan (link)
+- Hal yang dapat dilakukan saat ISOMAN
