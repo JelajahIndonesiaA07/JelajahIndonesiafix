@@ -1,0 +1,350 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+
+
+
+<head>
+<meta charset="UTF-8">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarCenteredExample"
+      >
+        <!-- Left links -->
+        <span class="navbar-text"
+        style="color: #fafafa">
+        {{ user.get_username }}
+      </span>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color: #fafafa" href="#">Todolist Ajax</a>
+          </li>
+          <li class="nav-item">
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              style="color: #fafafa"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fafafa" data-toggle="modal" data-target="#myModal" href="#" >Tambah Task</a>
+          </li>
+          <li class="nav-item">
+          </li>
+          
+         
+          <li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+
+
+
+
+
+
+
+
+<div class="container">
+  
+<div class="d-flex column flex-wrap justify-content-evenly align-content-evenly">
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+  <div class="prime"></div>
+  <div class="front">
+    <img src="https://ak.picdn.net/shutterstock/videos/24669926/thumb/1.jpg alt="" class="cover">
+  </div>
+
+  <div class="back">
+    <div class="trailer" id="player">
+    </div>
+
+    <div class="title">
+      <h3>Black Panther</h3>
+
+      <i class="fas fa-play ic-play"></i>
+      <i class="fas fa-plus ic-plus"></i>
+    </div>
+
+    <div class="description">
+      <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+    
+    </div>
+
+  </div>
+
+  <div class="background"></div>
+  
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+    <div class="prime"></div>
+    <div class="front">
+      <img src="https://c0.wallpaperflare.com/preview/41/187/641/indonesia-ancol-beach-city.jpg" 
+      alt="" class="cover">
+    </div>
+  
+    <div class="back">
+      <div class="trailer" id="players">
+      </div>
+  
+      <div class="title">
+        <h3>Black Panther</h3>
+  
+        <i class="fas fa-play ic-play"></i>
+        <i class="fas fa-plus ic-plus"></i>
+      </div>
+  
+      <div class="description">
+        <p style="color:white" >When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+      </div>
+  
+    </div>
+  
+    <div class="background"></div>
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://t3.ftcdn.net/jpg/02/34/59/46/360_F_234594611_Zx3JMvEPLrZ6RTaxi6DQYG5Y9ooiukEJ.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="playerss">
+          </div>
+      
+          <div class="title">
+            <h3>Black Panther</h3>
+      
+            <i class="fas fa-play ic-play"></i>
+            <i class="fas fa-plus ic-plus"></i>
+          </div>
+      
+          <div class="description">
+            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+  
+
+
+
+  
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://t3.ftcdn.net/jpg/02/34/59/46/360_F_234594611_Zx3JMvEPLrZ6RTaxi6DQYG5Y9ooiukEJ.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="playerss">
+        </div>
+    
+        <div class="title">
+          <h3>Black Panther</h3>
+    
+          <i class="fas fa-play ic-play"></i>
+          <i class="fas fa-plus ic-plus"></i>
+        </div>
+    
+        <div class="description">
+          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://t3.ftcdn.net/jpg/02/34/59/46/360_F_234594611_Zx3JMvEPLrZ6RTaxi6DQYG5Y9ooiukEJ.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="playerss">
+        </div>
+    
+        <div class="title">
+          <h3>Black Panther</h3>
+    
+          <i class="fas fa-play ic-play"></i>
+          <i class="fas fa-plus ic-plus"></i>
+        </div>
+    
+        <div class="description">
+          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+  <div class="d-inline-block">
+    <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://t3.ftcdn.net/jpg/02/34/59/46/360_F_234594611_Zx3JMvEPLrZ6RTaxi6DQYG5Y9ooiukEJ.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="playerss">
+          </div>
+      
+          <div class="title">
+            <h3>Black Panther</h3>
+      
+            <i class="fas fa-play ic-play"></i>
+            <i class="fas fa-plus ic-plus"></i>
+          </div>
+      
+          <div class="description">
+            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+</div>
+
+
+  <div class="d-inline-block">
+    <span class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-flex main-content">
+              <div class="content-text p-4">
+                <h5>Tambah Task</h5>
+
+                <form method="post" id="todolist_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukkan nama barang"
+                      name="title"
+                      id="title"
+                    />
+                  </div>
+                  <div class="form-group">
+                  <label for="description" class="form-label">description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan description barang"
+                    name="description"
+                    id="description"
+                  />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+
+          </div>
+        </div>
+      </span>
+</div>
+</div>
+</body>
+
+{% endblock content %}
