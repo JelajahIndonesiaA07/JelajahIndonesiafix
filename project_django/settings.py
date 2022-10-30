@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example_app',
-    'kuisioner_data_user',
 ]
 
 MIDDLEWARE = [
