@@ -9,7 +9,7 @@ $(document).ready( () =>{
     
 
     let listPertanyaan = [
-        "Berapakah rentang umur anda?", 
+        "Berapakah umur anda?", 
         "Apakah jenis kelamin anda?",
         "Apakah anda sudah menerima vaksin Covid-19?",
         "Darimana negara asalmu?",
@@ -18,19 +18,20 @@ $(document).ready( () =>{
         "Contact person yang dapat dihubungi",
     ];
     
-    let radio = [1, 2, 3, 5];
+    // let radio = [3, 4, 6];
     
     let pertanyaanCounter = 0;
     let nama = "";
     let umur = 0;
     let gender = "";
-    let vaksin = false;
+    let vaksin = "";
     let negara = "";
     let tujuan = "";
     let provinsi = "";
     let kontak = "";
     
     $("#next-q").click(function(){
+        console.log(pertanyaanCounter);
         if(pertanyaanCounter === 0){
             if ($("#nama").val().length === 0) {
                 alert("Harap isi nama anda");
@@ -46,19 +47,18 @@ $(document).ready( () =>{
         }
         
         pertanyaanCounter++;
-        console.log(pertanyaanCounter)
-        if(pertanyaanCounter === 7){
+        if(pertanyaanCounter === 8){
             cekSemua();
             return
         }
     
-        if(radio.includes(pertanyaanCounter-1)){
-            if(!$(`input[name='a${pertanyaanCounter-1}']:checked`).val()){
-                alert("Pertanyaan ini wajib dijawab");
-                pertanyaanCounter--;
-                return;
-            }
-        }
+        // if(radio.includes(pertanyaanCounter)){
+        //     if(!$(`input[name='a${pertanyaanCounter}']:checked`).val()){
+        //         alert("Pertanyaan ini wajib dijawab");
+        //         pertanyaanCounter--;
+        //         return;
+        //     }
+        // }
     
         $("#question-navigator").fadeOut(300, () =>{
             if(pertanyaanCounter > 1) $("#back-q").show();
@@ -104,24 +104,20 @@ $(document).ready( () =>{
         pertanyaanCounter--;
         nama = $('#nama').val();
         console.log(nama);
-        umur = $('#umur').val();
+        umur = $("input[type='number'][id='umur']").val();
         console.log(umur);
     
-
         gender = $("input[type='radio'][name='gender']:checked").val();
+        console.log(gender);
         vaksin = $("input[type='radio'][name='vaksin']:checked").val();
+        console.log(vaksin);
         negara = $('select[name=country-selector] option').filter(':selected').val();
+        console.log(negara);
         provinsi = $('select[name=provinsi-selector] option').filter(':selected').val();
+        console.log(provinsi);
 
-        umur = $('#kontak').val();
+        kontak = $('#kontak').val();
         console.log(kontak);
-
-
-        console.log($('.jawab:checked'))
-        $('.jawab:checked').each((index, element) => {
-            scoreAssessment += parseInt($(element).val());
-            console.log(scoreAssessment)
-        })
 
         document.cookie = `nama=${nama}`
         document.cookie = `umur=${umur}`
@@ -149,6 +145,8 @@ $(document).ready( () =>{
         fd.append('tujuan', tujuan);
         fd.append('prov', prov);
         fd.append('kontak', kontak);
+
+        console.log(fd)
 
         $.ajax({
             url : '',

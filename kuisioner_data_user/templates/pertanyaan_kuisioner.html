@@ -38,20 +38,19 @@
         </div>
         <div class="answer-container m-5" id="a">
             <div id="a0-con">
-                <input type="text" id="nama" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm" hidden>
+                <input type="text" id="nama" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm" >
             </div>
             <div id="a1-con" hidden class="text-xl xl:text-3xl text-white"> 
-                <input type="number" id="umur" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm" hidden>
-            </div>
-            
+                <input type="number" min="1" max="70" id="umur" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm">
+            </div>            
             <div id="a2-con" hidden class="text-xl xl:text-3xl text-white"> 
                 <input type="radio" name="gender" id="laki" value="laki-laki" class="jawab"> <label for="laki">Laki - Laki</label><br>
                 <input type="radio" name="gender" id="perempuan" value="perempuan" class="jawab"> <label for="perempuan">Perempuan</label>
             </div>
 
             <div id="a3-con" hidden class="text-xl xl:text-3xl text-white">
-                <input type="radio" name="vaksin" id="sudah" value=true class="jawab"> <label for="sudah">Ya, sudah pernah</label><br>
-                <input type="radio" name="vaksin" id="belum" value=false class="jawab"> <label for="belum">Tidak, belum pernah</label>
+                <input type="radio" name="vaksin" id="sudah" value=sudah class="jawab"> <label for="sudah">Ya, sudah pernah</label><br>
+                <input type="radio" name="vaksin" id="belum" value=belum class="jawab"> <label for="belum">Tidak, belum pernah</label>
             </div>
 
             <div id="a4-con" hidden class="text-xl xl:text-3xl text-white">
@@ -324,7 +323,7 @@
             </div>
 
             <div id="a7-con" class="text-xl xl:text-3xl text-white" hidden>
-                <input type="text" id="kontak" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm" hidden>
+                <input type="text" id="kontak" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-white shadow-sm">
             </div>
         </div>
         <div id="question-navigator" class="m-5 relative">

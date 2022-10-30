@@ -8,7 +8,7 @@ class kuisioner(models.Model):
     nama = models.CharField(max_length=255)
     umur = models.IntegerField()
     gender = models.CharField(max_length=10)
-    vaksin = models.BooleanField()
+    vaksin = models.CharField(max_length=10)
     negara = models.CharField(max_length=255)
     tujuan = models.CharField(max_length=255)
     prov = models.CharField(max_length=255)
