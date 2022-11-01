@@ -22,6 +22,18 @@ var papandayan;
 var braga;
 var kebun;
 var sate;
+var lawang;
+var prambanan;
+var kotatua;
+var batik;
+var mesjidagung;
+var nepal;
+var ijen;
+var angkut;
+var jodiban;
+var coban;
+var tumpak;
+var papuma;
     
     $(document).on('mouseover', '#player', function() {
       player.playVideo();
@@ -190,6 +202,85 @@ var sate;
     $(document).on('mouseout', '#sate', function() {
       sate.pauseVideo();
     });
+
+    $(document).on('mouseover', '#lawang', function() {
+      lawang.playVideo();
+    });
+    $(document).on('mouseout', '#lawang', function() {
+      lawang.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#kotatua', function() {
+      kotatua.playVideo();
+    });
+    $(document).on('mouseout', '#kotatua', function() {
+      kotatua.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#batik', function() {
+      batik.playVideo();
+    });
+    $(document).on('mouseout', '#batik', function() {
+      batik.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#mesjidagung', function() {
+      mesjidagung.playVideo();
+    });
+    $(document).on('mouseout', '#mesjidagung', function() {
+      mesjidagung.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#nepal', function() {
+      nepal.playVideo();
+    });
+    $(document).on('mouseout', '#nepal', function() {
+      nepal.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#ijen', function() {
+      ijen.playVideo();
+    });
+    $(document).on('mouseout', '#ijen', function() {
+      ijen.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#angkut', function() {
+      angkut.playVideo();
+    });
+    $(document).on('mouseout', '#angkut', function() {
+      angkut.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#jodiban', function() {
+      jodiban.playVideo();
+    });
+    $(document).on('mouseout', '#jodiban', function() {
+      jodiban.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#coban', function() {
+      coban.playVideo();
+    });
+    $(document).on('mouseout', '#coban', function() {
+      coban.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#tumpak', function() {
+      tumpak.playVideo();
+    });
+    $(document).on('mouseout', '#tumpak', function() {
+      tumpak.pauseVideo();
+    });
+
+    $(document).on('mouseover', '#papuma', function() {
+      papuma.playVideo();
+    });
+    $(document).on('mouseout', '#papuma', function() {
+      papuma.pauseVideo();
+    });
+
+
 
     $(document).ready(function () {
       $("#myModal").modal();

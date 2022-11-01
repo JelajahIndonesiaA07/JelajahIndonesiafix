@@ -24,13 +24,14 @@ def ShowActivityJogja(request):
 def ShowActivityJabar(request):
     context = {}
     return render(request, "jabar.html",context)
-# def ShowActivityJateng(request):
-#     context = {}
-#     return render(request, "jateng.html",context)
 
-# def ShowActivityJatim(request):
-#     context = {}
-#     return render(request, "jatim.html",context)
+def ShowActivityJateng(request):
+    context = {}
+    return render(request, "jateng.html",context)
+
+def ShowActivityJatim(request):
+    context = {}
+    return render(request, "jatim.html",context)
 
 
 def ShowActivityForms(request):
