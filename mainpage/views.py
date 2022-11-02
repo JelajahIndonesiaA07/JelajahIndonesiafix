@@ -13,6 +13,7 @@ from django.urls import reverse
 @login_required(login_url='/mainpage/login/')
 def show_mainpage(request):
     user = request.user
+    
     context = {
     'user': user,
     'last_login': request.COOKIES['last_login'],
