@@ -41,11 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'activity',
     'example_app',
-
+    'tempat_wisata'
     "emergencycall",
     "mainpage",
     'tempat_kuliner',
-
 ]
 
 MIDDLEWARE = [
