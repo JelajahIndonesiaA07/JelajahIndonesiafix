@@ -1,5 +1,4 @@
 from django.contrib import admin
-from tempat_wisata.models import wisata
+from tempat_wisata.models import tempat_wisata_Item
 
-# Register your models here.
-admin.site.register(wisata)
+admin.site.register(tempat_wisata_Item)

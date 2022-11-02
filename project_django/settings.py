@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'activity',
     'example_app',
-    'tempat_wisata'
+    'tempat_wisata',
     "emergencycall",
     "mainpage",
     'tempat_kuliner',

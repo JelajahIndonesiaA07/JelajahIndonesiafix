@@ -1,11 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
-class wisata(models.Model):
-    nama = models.CharField(max_length=30)
-    provinsi = models.CharField(max_length=30)
-    alamat = models.CharField(max_length=200)
-    deskripsi = models.CharField(max_length=200)
-
-class filter(models.Model):
-    prov= models.CharField(max_length=30)
+class tempat_wisata_Item(models.Model):
+    user = models.ForeignKey(User, on_delete = models.CASCADE)
+    nama_tempat_wisata = models.TextField()
+    provinsi_tempat_wisata = models.CharField(max_length = 10)
+    deskripsi_tempat_wisata = models.TextField()
