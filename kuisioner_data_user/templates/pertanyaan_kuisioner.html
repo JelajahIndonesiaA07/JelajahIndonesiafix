@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment Quiz</title>
+    <title>Form Profile</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: linear-gradient(to right, #001253, #3F3B6C, #404258);
+            background-image: url('https://www.pajakku.com/upload/images/cdf4f6ffb119b4806354adf43e8c850b');
         }
         .bg-pbp{
             background-color: white;
@@ -33,8 +33,8 @@
 <body class="flex flex-col h-screen">
     <div class="container m-auto p-4">
         <div id="q" class="question-container m-3" hidden>
-            <p class="title-font text-white text-xl">Kuisioner Jelajah Indonesia</p>
-            <p id="question" class="title-font text-5xl xl:text-7xl text-gray-50">Halo, silahkan masukan nama lengkap anda</p>
+            <p class="title-font text-white text-xl" style="color: white ;">Kuisioner Jelajah Indonesia</p>
+            <p id="question" class="title-font text-5xl xl:text-7xl text-white bg-secondary" style="color: white">Halo, silahkan masukan nama lengkap anda</p>
         </div>
         <div class="answer-container m-5" id="a">
             <div id="a0-con">
@@ -44,13 +44,13 @@
                 <input type="number" min="1" max="70" id="umur" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-black shadow-sm">
             </div>            
             <div id="a2-con" hidden class="text-xl xl:text-3xl text-white"> 
-                <input type="radio" name="gender" id="laki" value="laki-laki" class="jawab"> <label for="laki">Laki - Laki</label><br>
-                <input type="radio" name="gender" id="perempuan" value="perempuan" class="jawab"> <label for="perempuan">Perempuan</label>
+                <input type="radio" name="gender" id="laki" value="laki-laki" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="laki">Laki - Laki</label><br>
+                <input type="radio" name="gender" id="perempuan" value="perempuan" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="perempuan">Perempuan</label>
             </div>
 
             <div id="a3-con" hidden class="text-xl xl:text-3xl text-white">
-                <input type="radio" name="vaksin" id="sudah" value=sudah class="jawab"> <label for="sudah">Ya, sudah pernah</label><br>
-                <input type="radio" name="vaksin" id="belum" value=belum class="jawab"> <label for="belum">Tidak, belum pernah</label>
+                <input type="radio" name="vaksin" id="sudah" value=sudah class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="sudah">Ya, sudah pernah</label><br>
+                <input type="radio" name="vaksin" id="belum" value=belum class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="belum">Tidak, belum pernah</label>
             </div>
 
             <div id="a4-con" hidden class="text-xl xl:text-3xl text-white">
@@ -303,15 +303,14 @@
             </div>
             
             <div id="a5-con" hidden class="text-xl xl:text-3xl text-white">
-                <input type="radio" name="tujuan" id="G20" value="Perwakilan G20" class="jawab"> <label for="G20">Perwakilan G20</label> <br>
-                <input type="radio" name="tujuan" id="work" value="Pekerjaan/Bisnis" class="jawab"> <label for="work">Pekerjaan/Bisnis</label> <br>
-                <input type="radio" name="tujuan" id="travel" value="Travelling" class="jawab"> <label for="travel">Travelling</label> <br>
-                <input type="radio" name="tujuan" id="diplomatic" value="Diplomasi" class="jawab"> <label for="diplomatic">Diplomasi</label> <br>
-                <input type="radio" name="tujuan" id="study" value="Pendidikan" class="jawab"> <label for="study">Pendidikan</label> 
+                <input type="radio" name="tujuan" id="G20" value="Perwakilan G20" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="G20">Perwakilan G20</label> <br>
+                <input type="radio" name="tujuan" id="work" value="Pekerjaan/Bisnis" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="work">Pekerjaan/Bisnis</label> <br>
+                <input type="radio" name="tujuan" id="travel" value="Travelling" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="travel">Travelling</label> <br>
+                <input type="radio" name="tujuan" id="diplomatic" value="Diplomasi" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="diplomatic">Diplomasi</label> <br>
+                <input type="radio" name="tujuan" id="study" value="Pendidikan" class="jawab"> <label style="background-color: rgb(135,206,235,0.5)" for="study">Pendidikan</label> 
             </div>
             <div id="a6-con" hidden class="text-xl xl:text-3xl text-white">
                 <select name="provinsi-selector" id="prov-slec" class="w-full border-4 border-indigo-400 rounded bg-pbp p-2 text-lg lg:p-4 lg:text-2xl text-black shadow-sm">
-                    <option>pilih provinsi</option>
                     <option value="Bali">Bali</option>
                     <option value="DKI Jakarta">DKI Jakarta</option>
                     <option value="Daerah Istimewa Yogyakarta">Daerah Istimewa Yogyakarta</option>
@@ -341,6 +340,6 @@
         </div>
     </div>
     <!-- <script src= "quizApp.js"></script> -->
-    <script src= "{% static 'kuisioner.js' %}"></script>
+    <script src= "{% static 'js/kuisioner.js' %}"></script>
 </body>
 </html>

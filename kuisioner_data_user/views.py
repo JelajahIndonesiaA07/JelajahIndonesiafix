@@ -31,15 +31,4 @@ def index(request):
 def hasil(request):
     return render(request, 'hasil_kuisioner.html')
 
-
-@csrf_exempt
-def mobile(request):
-    assessment = request.POST.dict()
-    assessment['isCovid'] = int(assessment['isCovid']) >= 6
-    form = AssessmentForm(request.POST)
-    if (form.is_valid()):
-        form.save()
-    data = {'req': 'complete'}
-    return JsonResponse(data)
-
 # Create your views here.
