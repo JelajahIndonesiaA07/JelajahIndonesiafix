@@ -1,0 +1,112 @@
+[
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":1,
+        "fields":{
+            "hospital_name":"Rumah Sakit Cipto Mangunkusumo",
+            "hospital_number":"0211500135",
+            "hospital_location": "Gedung A, Jl. Pangeran Diponegoro No.71, RW.5, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10430"
+
+        }
+},
+{
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":2,
+        "fields":{
+            "hospital_name":"Rumah Sakit Pondok Indah",
+            "hospital_number":"0217657525",
+            "hospital_location": "Kav. UE, Jl. Metro Duta, Pd. Pinang, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":3,
+        "fields":{
+            "hospital_name":"Rumah Sakit Siloam",
+            "hospital_number":"02129962888",
+            "hospital_location": "Jl. Garnisun 1 No.2-3, RT.5/RW.4, Karet Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":4,
+        "fields":{
+            "hospital_name":"Rumah Sakit Persahabatan",
+            "hospital_number":"0214891708",
+            "hospital_location": "Jl. Persahabatan Raya No.1, RT.16/RW.13, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":5,
+        "fields":{
+            "hospital_name":"Rumah Sakit Haji Jakarta",
+            "hospital_number":"0218000694",
+            "hospital_location": "Jl. Raya Pd. Gede No.4, RT.1/RW.1, Lubang Buaya, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13650"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":6,
+        "fields":{
+            "hospital_name":"Balimed Hospital",
+            "hospital_number":"08111484748",
+            "hospital_location": "Jl. Mahendradatta No.57 X, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80119"
+        }
+},
+{
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":7,
+        "fields":{
+            "hospital_name":"Rumah Sakit Siloam Denpasar",
+            "hospital_number":"0361779900",
+            "hospital_location": "Jl. Sunset Road No.818, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":8,
+        "fields":{
+            "hospital_name":"Bali Royal Hospital",
+            "hospital_number":"0361222588",
+            "hospital_location": "Jl. Tantular No.6, Renon, Kec. Denpasar Tim., Kota Denpasar, Bali 80226"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":9,
+        "fields":{
+            "hospital_name":"Dr. Sardjito General Hospital",
+            "hospital_number":"0274631190",
+            "hospital_location": "Jl. Kesehatan Jl. Kesehatan Sendowo No.1, Sendowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":10,
+        "fields":{
+            "hospital_name":"Bethesda Hospital, Yogyakarta",
+            "hospital_number":"0274586688",
+            "hospital_location": "Jl. Jend. Sudirman No.70, Kotabaru, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55224"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":11,
+        "fields":{
+            "hospital_name":"Santo Borromeus Hospital",
+            "hospital_number":"0222552000",
+            "hospital_location": "Jl. Ir. H. Juanda No.100, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132"
+        }
+    },
+    {
+        "model":"emergencycall.EmergencyCallItem",
+        "pk":12,
+        "fields":{
+            "hospital_name":"Santosa Hospital Bandung Central",
+            "hospital_number":"0224248333",
+            "hospital_location": "Jl. Kebon Jati No.38, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181"
+        }
+    }
+]
+
