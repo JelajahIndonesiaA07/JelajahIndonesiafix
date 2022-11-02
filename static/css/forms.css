@@ -1,0 +1,289 @@
+/* :root {
+    --blue: #ec0e8f;
+    --white : #fff;
+    --purple: #6f4faf;
+  }
+  
+  body {
+    font: 16px / 24px "Rubik", Tahoma;
+    color: var(--white);
+    background-color: #15172b;
+    margin: 55px 0px;
+  }
+  
+  h6 {
+    color: rgb(161, 108, 240);
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  h5 {
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h4 {
+    color: rgb(70, 149, 209);
+    font-family: Tahoma;
+    text-align: center;
+  }
+  
+  h3 {
+    font-weight: bold;
+    font-family: Tahoma;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  a:link {
+    color: var(--white);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--white);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--white);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1400px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  
+  .table_card {
+    display: flex;
+    padding: 30px 5px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    background-color: rgb(91, 1, 174);
+    border-radius: 12px;
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    color: var(--white);
+    background: var(--purple);
+  }
+  .card .card-title {
+    font-size: 25px;
+  }
+  .card .card-content {
+    margin: 30px 0;
+    max-width: 85%;
+    font-size: 20px;
+  }
+  .card:hover .card-link {
+    background: var(--purple);
+  }
+  .table_card::-webkit-scrollbar {
+    height: 12px;
+  }
+  .table_card::-webkit-scrollbar-thumb{
+    background: #888;  }
+
+  .table_card::-webkit-scrollbar-thumb:hover{
+    background: #555; 
+  }
+  .table_card::-webkit-scrollbar-track {
+    border-radius: 95px;
+  }
+  .table_card::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+  
+  @media (min-width: 500px) {
+    .card {
+      flex-basis: calc(50% - 10px);
+    }
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .card {
+      flex-basis: calc(25% - 30px);
+    }
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+  } */
+
+  body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    background-color: aliceblue;
+  }
+  
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 3px;
+      column-gap: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      font: "Inconsolata", sans-serif;
+      
+  
+    }
+    
+    a {
+      color: black;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    .card {
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.762);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        font: "Inconsolata", sans-serif;
+      
+    }
+    
+    .card-body {
+        justify-content: center;
+        text-align: center;
+        
+        opacity: 0,5;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        font: "Inconsolata", sans-serif;
+        
+    }
+    
+    .card-text {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    .card-font {
+      color: rgb(255, 255, 255);
+      font: "Inconsolata", sans-serif;
+      
+    
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    
+    h1{
+      font-size: 20px;
+      font: "Inconsolata", sans-serif;
+    }
+    h2{
+      color: aliceblue;
+      font-size: 18px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    h3{
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+      color: aliceblue;
+      margin-bottom: 5px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    h4 {
+      font-size: 30px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    h5 {
+      justify-content: center;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    h6 {
+      font-size: 15px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font: "Inconsolata", sans-serif;
+    }
+    
+    .submit {
+          background-color: rgba(0, 0, 0, 0.819);
+          border-radius: 80px;
+          max-width: fit-content;
+          min-width: fit-content;
+          vertical-align: middle;
+          box-sizing: content-box;
+          color: rgb(252, 252, 252);
+          cursor: pointer;
+          font-size: 15px;
+          height: 25px;
+          margin-top: 20px;
+          outline: 0;
+          text-align: center;
+          width: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          font: "Inconsolata", sans-serif;
+        }
+    
+      .submit:hover {
+        box-shadow: 0 0.5em 0.3em -0.2em var(--hover);
+        transform: translateY(-0.15em);
+    }
+
+    .social-part .fa{
+      padding-right:20px;
+    }
+    ul li a{
+      margin-right: 20px;
+    }
+    

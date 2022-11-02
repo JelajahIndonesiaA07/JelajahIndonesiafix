@@ -1,14 +1,12 @@
-from django import forms
-from django.forms.utils import pretty_name
 from django.shortcuts import render
 from .forms import AssessmentForm
 from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
-
+@login_required(login_url='/mainpage/login/')
 def index(request):
     form = AssessmentForm(request.POST)
 
@@ -28,6 +26,7 @@ def index(request):
     return render(request, 'pertanyaan_kuisioner.html', context)
 
 
+@login_required(login_url='/mainpage/login/')
 def hasil(request):
     return render(request, 'hasil_kuisioner.html')
 
