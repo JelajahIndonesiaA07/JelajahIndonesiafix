@@ -10,7 +10,7 @@ Nama anggota kelompok:
 | 2106752073 | Muhammad Irsyad Mufid |
 | 2106751120 | Ied Mubaraque Sultan Salahuddine El Ayyubie |
 
-### [Link Aplikasi](https://jelajah-indonesia.herokuapp.com)
+### [Link Aplikasi](https://jelajahindonesia.herokuapp.com)
 
 - Pada project PBP ini, kelompok kami membuat sebuah website bernama Jelajah Indonesia yang berisi segala informasi dan hal yang dapat dilakukan oleh pandatang dari berbagai negara yang akan menjadi partisipan G20 untuk mengisi waktu selama rangkaian acara G20 berlangsung.
 
