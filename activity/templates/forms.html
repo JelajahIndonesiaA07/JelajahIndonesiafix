@@ -144,19 +144,11 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Kontak Rumah Sakit</a>
+        <a class="nav-link" href="{% url 'emergencycall:show_hospital' %}">Kontak Rumah Sakit</a>
       </li>
-      <li class="nav-item dropdown dmenu"">
-        <a class="nav-link dropdown-toggle" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}" id="navbardrop" data-toggle="dropdown">Tempat Kuliner</a>
-        <div class="dropdown-menu sm-menu">
-          <a class="dropdown-item" href="#">Jakarta</a>
-          <a class="dropdown-item" href="#">Bali</a>
-          <a class="dropdown-item" href="#">Jawa Barat</a>
-          <a class="dropdown-item" href="#">Jawa Tengah</a>
-          <a class="dropdown-item" href="#">Jogja</a>
-          <a class="dropdown-item" href="#}">Jawa Timur</a>
-          <a class="dropdown-item" href="#">Saran</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}">Tempat Kuliner</a>
+      </li>
       </li>
        <li class="nav-item dropdown dmenu">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
