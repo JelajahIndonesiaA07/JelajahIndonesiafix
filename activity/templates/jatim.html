@@ -39,80 +39,57 @@
     
     // 7OiJZH8JXpw
   </script>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
-      >
-        <!-- Left links -->
-        <span class="navbar-text"
-        style="color: #fafafa">
-        {{ user.get_username }}
-      </span>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #fafafa" href="#">Todolist Ajax</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              style="color: #fafafa"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fafafa" data-toggle="modal" data-target="#myModal" href="#" >Tambah Task</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          
-         
-          <li>
-        </ul>
-        <!-- Left links -->
+ <nav class=" navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown dmenu">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Our Service
+      </a>
+      <div class="dropdown-menu sm-menu">
+        <a class="dropdown-item" href="#">service2</a>
+        <a class="dropdown-item" href="#">service 2</a>
+        <a class="dropdown-item" href="#">service 3</a>
       </div>
-      <!-- Collapsible wrapper -->
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Call</a>
+    </li>
+     <li class="nav-item dropdown dmenu">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu sm-menu">
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+        <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+      </div>
+    </li>
+    </ul>
+    <div class="social-part">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
     </div>
-    <!-- Container wrapper -->
-  </nav>
+  </div>
+</nav>
   <p class="h1"
   style="color: #e65151">Jawa Timur</p>
 
@@ -139,11 +116,11 @@
     </div>
 
     <div class="title">
-      <h3>Black Panther</h3>
+      <h3>Bromo</h3>
     </div>
 
     <div class="description">
-      <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+      <p style="color:white">Hal yang dapat dilakukan adalah Berpetualang Naik Mobil Jip, Menyusuri Eksotisme Pasir Berbisik Sambil Berburu Foto, Berburu Panorama Sunrise, camping di Ranu Kumbolo dan melihat Malam Bertabur Bintang, Berkunjung ke Pura Luhur Poten, Menyaksikan Upacara Adat Yadnya Kasada</p>
     
     </div>
 
@@ -172,11 +149,11 @@
       </div>
   
       <div class="title">
-        <h3>Black Panther</h3>
+        <h3>Museum Angkutr</h3>
       </div>
   
       <div class="description">
-        <p style="color:white" >When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+        <p style="color:white" > Hal yang dapat dilakukan adalah Melihat helikopter pertama milik Indonesia, Merasakan sensasi di dalam pesawat kepresidenan, Mengunjungi Istana Buckingham Ratu Elizabeth II,  berkeliling di Gengster Town, Melihat koleksi mobil antik di Gudang Batavia</p>
       </div>
   
     </div>
@@ -202,13 +179,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>Kampung Warna-Warni Jodipan</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Hal yang dapat dilakukan adalah Mengunjungi desa pelangi yang penuh warna dan ditupi oleh payung bewarna serta mengunjungi dan berfoto di jembatan yang menghubungkan 3 desa, mengunjungi Kampung Biru Arema</p>
           </div>
       
         </div>
@@ -236,11 +213,11 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Coban Talun</h3>
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Hal yang dapat dilakukan adalah Bermain Air atau Berenang, Bersantai, Berjalan Jalan di Taman Bunga, Mengunjungi Apache Camp dan Pagupon Camp, Berburu Foto Cantik</p>
         </div>
     
       </div>
@@ -266,13 +243,13 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Tumpak Sewu</h3>
     
           
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Hal yang dapat dilakukan adalah Agrowisata Buah Salak, Berburu Foto Keren, Bermain Air, Wisata Kulineran, Bermalam di Dekat Air Terjun</p>
         </div>
     
       </div>
@@ -298,13 +275,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>Pantai Papuma</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Hal yang dapat dilakukan adalah Mengintip jajaran perahu nelayan dari atas bukit, Menjelajahi dataran karang eksotis dengan penuh perjuangan, Menikmati panorama sempurna dari ketinggian di Siti Hinggil, Seru-seruan bermain pasir dan ombak di Pasir Putih Malikan, Merasakan nikmat kuliner sekitar di tepi Pantai Papuma, menyusuri perairan menggunakan perahu</p>
           </div>
       
         </div>

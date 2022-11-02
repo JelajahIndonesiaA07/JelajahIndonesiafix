@@ -39,79 +39,56 @@
     
     // 7OiJZH8JXpw
   </script>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
-      >
-        <!-- Left links -->
-        <span class="navbar-text"
-        style="color: #fafafa">
-        {{ user.get_username }}
-      </span>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #fafafa" href="#">Todolist Ajax</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              style="color: #fafafa"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fafafa" data-toggle="modal" data-target="#myModal" href="#" >Tambah Task</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          
-         
-          <li>
-        </ul>
-        <!-- Left links -->
+<nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Call</a>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <div class="social-part">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
       </div>
-      <!-- Collapsible wrapper -->
     </div>
-    <!-- Container wrapper -->
   </nav>
   <p class="h1"
   style="color: #e65151">Bali</p>
@@ -139,13 +116,13 @@
     </div>
 
     <div class="title">
-      <h3>Black Panther</h3>
+      <h3>Hutan Monyet Ubud</h3>
 
       
     </div>
 
     <div class="description">
-      <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+      <p style="color:white">Wisata cagar alam yang berlokasi di komplek candi Ubud dan terdapat sekitar 600 ekor monyet yang dapat berinteraksi dengan kita. Kita dapat Mengunjungi tempat suci di tengah hutan Sangeh dan berburu spot foto</p>
     
     </div>
 
@@ -174,13 +151,13 @@
       </div>
   
       <div class="title">
-        <h3>Black Panther</h3>
+        <h3>Gunung Agung</h3>
   
         
       </div>
   
       <div class="description">
-        <p style="color:white" >When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+        <p style="color:white" >Gunung Agung ialah gunung terbesar dan tertinggi di Bali. Kita dapat menikmati pemandangan  dari puncak Gunung Agung dan melihat gunung Rinjani di Lombok, matahari terbit, Gunung Batur dan Danau Batur</p>
       </div>
   
     </div>
@@ -206,13 +183,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>Seminyak Bali</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Merupakan kawasan pariwisata di Bali berupa kawasan resort pantai. Kita bisa melakukan scuba diving, horse riding, surfing dan menikmati restoran, resort serta villa mewah</p>
           </div>
       
         </div>
@@ -240,13 +217,13 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Pantai kelingking</h3>
     
           
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Hal yang dilaukan adalah snorkeling/diving di mantapoint ditemani dengan ikan pari, Kelingking Cliff Point melihat tebing yang menjorok ke lautan dengan bentuk seperti dinosaurus, serta melihat sunset dan menikmati pantai pasir putih  </p>
         </div>
     
       </div>
@@ -272,13 +249,13 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Waterboom Bali </h3>
     
           
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Dengan luas 3,8 hektar, Waterbom Bali dirancang untuk memberikan pengalaman yang tak terlupakan bagi para pengunjung. Baik pengunjung yang ingin memacu adrenalin di seluncuran paling curam di Asia- The Climax, hingga bagi para keluarga yang ingin membawa anak-anak untuk bermain di area yang luas, ataupun pengunjung yang ingin sekedar berendam dan bersantai jauh dari kebisingan.</p>
         </div>
     
       </div>
@@ -304,13 +281,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>Uluwatu Bali</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Hal yang dapat dilakukan ialah melihat Pura Uluwatu Dan Tari Kecak, Habiskan Hari Di Sundays Beach Club, Makan Di Restoran Atau Habiskan Hari Di Rumah Tebing Ulu, Jelajahi Pantai, Pagi Di Kafe, Matahari Terbenam Di Single Fin</p>
           </div>
       
         </div>

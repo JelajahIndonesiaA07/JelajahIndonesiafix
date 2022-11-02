@@ -151,11 +151,11 @@
 
   body, html {
     height: 100%;
-    font: "Inconsolata", sans-serif;
+    font-family: "Inconsolata", sans-serif;
     background-color: aliceblue;
   }
   
-    .table_card {
+    .wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 3px;
@@ -187,7 +187,7 @@
     .card-body {
         justify-content: center;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.322);
+        
         opacity: 0,5;
         margin-left: auto;
         margin-right: auto;

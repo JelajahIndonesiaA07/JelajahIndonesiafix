@@ -20,7 +20,7 @@
         videoId: 'hjiAbR_oRJ4'
     }),
     gede= new YT.Player('gede', {
-            videoId: 'PF-yToyjJ-s'
+            videoId: '1cqmAaXmokI'
     }),
     papandayan = new YT.Player('papandayan', {
         videoId: '6Ana8ikQQxY'
@@ -39,79 +39,56 @@
     
     // 7OiJZH8JXpw
   </script>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
-      >
-        <!-- Left links -->
-        <span class="navbar-text"
-        style="color: #fafafa">
-        {{ user.get_username }}
-      </span>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #fafafa" href="#">Todolist Ajax</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              style="color: #fafafa"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fafafa" data-toggle="modal" data-target="#myModal" href="#" >Tambah Task</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          
-         
-          <li>
-        </ul>
-        <!-- Left links -->
+<nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Call</a>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <div class="social-part">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
       </div>
-      <!-- Collapsible wrapper -->
     </div>
-    <!-- Container wrapper -->
   </nav>
   <p class="h1"
   style="color: #e65151">Jawa Barat</p>
@@ -139,11 +116,11 @@
     </div>
 
     <div class="title">
-      <h3>Black Panther</h3>
+      <h3>Tangkuban Perahu</h3>
     </div>
 
     <div class="description">
-      <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+      <p style="color:white">Hal yang dapat dilakukan adalah mengambil foto dan menikmati makanan lokaldi Kawah Ratu, Menikmati Pijat Lumpur di Kawah Domas, Bersantai dan Manjakan Diri Anda di Pemandian Air Panas Ciater</p>
     
     </div>
 
@@ -172,11 +149,10 @@
       </div>
   
       <div class="title">
-        <h3>Black Panther</h3>
+        <h3>Gunung Gede</h3>
       </div>
-  
       <div class="description">
-        <p style="color:white" >When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+        <p style="color:white" >Wisata alam hujan yang indah, danau biru, air terjun, sumber air panas, kawah yang menakjubkan, padang rumput alpine Suryakencana, menikmati matahari terbit dan terbenan dari puncak Gunung Gede yang indah</p>
       </div>
   
     </div>
@@ -202,13 +178,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>gunung Papandayan</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Merupakan gunung dengan trek pendakian yang santai, dengan spot foto yang indah di hutan mati serta padang edelweiss, menikmati wisata kolam air panas, serta mengunjungi danau maupun ke puncak gunung</p>
           </div>
       
         </div>
@@ -236,11 +212,11 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Braga</h3>
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Hal yang dapat dilakukan adalah menikmati banyak kuliner. Di tiap sudut Jalan Braga hampir bisa ditemui kafe, restoran, hingga kedai-kedai minuman mulai dari jus, boba hingga kopi. Salah satu kafe kopi yang ikonik di Jalan Braga dengan ciri khas Jawanya adalah Kopi Toko Djawa., mengambil foto ciamik di jalan braga, bersantai di tempat duduk di jalan braga, serta belanja di braga citywalk</p>
         </div>
     
       </div>
@@ -266,13 +242,13 @@
         </div>
     
         <div class="title">
-          <h3>Black Panther</h3>
+          <h3>Kebun Raya Bogor</h3>
     
           
         </div>
     
         <div class="description">
-          <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+          <p style="color:white">Hal yang dapat dilakukan ialah melihat koleksi tumbuhan dan istana bogor, pikinik, bersepeda, keliling kebun dengan mobil sewa, mengunjungi makan belanda, merasakan cai kahuripan, berburu spot foto, nongkrong di kafe dan belanja oleh-oleh</p>
         </div>
     
       </div>
@@ -298,13 +274,13 @@
           </div>
       
           <div class="title">
-            <h3>Black Panther</h3>
+            <h3>Gedung Sate</h3>
       
             
           </div>
       
           <div class="description">
-            <p style="color:white">When young King T'Challa is Drawn into conflit with an old foe that puts his homeland wakanda and the entire world at risk, he msut release Black Panther's full power to save them.</p>
+            <p style="color:white">Hal yang dapat dilakukan adalah mengunjungi museum dan teras atap, berfoto di gedung berasitektur hindia belanda, wisata kuliner, dan mengunjungi taman lansia</p>
           </div>
       
         </div>

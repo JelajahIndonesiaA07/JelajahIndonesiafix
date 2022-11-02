@@ -8,8 +8,10 @@ from django.http import HttpResponse
 from django.core import serializers
 from activity.models import Task
 from .forms import CreateForm
+from django.views.decorators.csrf import requires_csrf_token
+
 # Create your views here.
-def ShowActivity(request):
+def ShowActivityJakarta(request):
     context = {}
     return render(request, "activity.html",context)
 
@@ -37,20 +39,30 @@ def ShowActivityJatim(request):
 def ShowActivityForms(request):
     # forms_item = Task.objects.filter(user= request.user)
     forms_item = Task.objects.all()
-    context = {}
+    form = CreateForm(request.POST)
+    context = {
+        'list_activity': forms_item,
+        'form': form,
+    }
     return render(request, "forms.html",context)
 
+requires_csrf_token
 def AddActivity(request):
+    form = CreateForm(request.POST)
     if request.method == "POST":
-        title = request.POST.get("title")
-        print(title)
-        description = request.POST.get("description")
-        item = Task.objects.create(title = title, description = description)
-        item.save()
-        JsonResponse({"instance": "Proyek Dibuat"}, status=200)
-    return redirect("activity:ShowActivityForms")
+        if request.method == "POST":
+            if form.is_valid():
+                form.save()
+                return  ShowActivityForms(request)
+    context = {'form': form}
+    return render( request, 'forms.html', context)
 
 def show_json(request):
     # data = Task.objects.filter(user= request.user)
     data = Task.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+def hapus(request, id):
+    data = Task.objects.get(id=id)
+    data.delete()
+    return  ShowActivityForms(request)
