@@ -30,8 +30,11 @@ $(document).ready( () =>{
     if (vaksin === "sudah"){
         $("#vaksin").text(": ✅");
     }
-    else {
+    else if (vaksin === "belum"){
         $("#vaksin").text(": ❌");
+    }
+    else {
+        $("#vaksin").text(": ");
     }
     $("#negara").text(`: ${negara}`);
     $("#tujuan").text(`: ${tujuan}`);
