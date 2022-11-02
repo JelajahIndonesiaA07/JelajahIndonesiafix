@@ -15,7 +15,7 @@ $(document).ready( () =>{
         "Darimana negara asalmu?",
         "Apakah tujuan anda berkunjung ke Indonesia?", 
         "Apakah provinsi tujuan anda?",
-        "Contact person yang dapat dihubungi",
+        "Nomor telepon yang dapat dihubungi",
     ];
     
     // let radio = [3, 4, 6];

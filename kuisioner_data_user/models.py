@@ -12,7 +12,7 @@ class kuisioner(models.Model):
     negara = models.CharField(max_length=255)
     tujuan = models.CharField(max_length=255)
     prov = models.CharField(max_length=255)
-    kontak = models.CharField(max_length=15)
+    kontak = models.IntegerField()
 
     def __str__(self):
         return str(self.nama)

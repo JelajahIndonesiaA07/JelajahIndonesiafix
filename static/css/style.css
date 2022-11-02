@@ -3,6 +3,31 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+  height: fit-content;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #001d3d;
+}
+
+footer {
+  background-color: #001d3d;
+  margin-top: auto;
+}
+
 :root {
   --clr-dark: rgb(27, 37, 46);
   --br: 0.5em;
