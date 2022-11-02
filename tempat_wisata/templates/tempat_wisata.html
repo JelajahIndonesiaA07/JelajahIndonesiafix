@@ -8,8 +8,8 @@
 
     {% block meta %}
 
-    <link rel="stylesheet" href="{% static 'css/tempat_kuliner.css' %}">
-    <script src="{% static 'js/tempat_kuliner.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/tempat_wisata.css' %}">
+    <script src="{% static 'js/tempat_wisata.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
@@ -83,7 +83,7 @@
   </nav>
 </div>
   
-<h3><button type="button" class="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tambah Tempat Kuliner Baru</button></h3>
+<h3><button type="button" class="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tambah Tempat Wisata Baru</button></h3>
 
 <div class="wrapper">
 
@@ -94,22 +94,22 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Tempat Kuliner Baru</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah Tempat Wisata Baru</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="card-body">
-            <form class="kuliner-form">
+            <form class="wisata-form">
                 {% csrf_token %}
-                <h3>Nama Tempat Kuliner</h3>
-                {{ form.nama_tempat_kuliner }}
-                <h3>Rating</h3>
-                {{ form.rating_tempat_kuliner }}
-                <h3>Alamat</h3>
-                {{ form.lokasi_tempat_kuliner }}
+                <h3>Nama Tempat Wisata</h3>
+                {{ form.nama_tempat_wisata }}
+                <h3>Provinsi</h3>
+                {{ form.provinsi_tempat_wisata }}
+                <h3>Deskripsi</h3>
+                {{ form.deskripsi_tempat_wisata }}
             </form>
       </div>
         <h3><button type="button" class="submit" data-bs-dismiss="modal">Close</button> 
-        <button type="button" class="submit" onclick="add_tempat_kuliner()" data-bs-dismiss="modal">Tambah Tempat Kuliner Baru</button></h3>
+        <button type="button" class="submit" onclick="add_tempat_wisata()" data-bs-dismiss="modal">Tambah Tempat Wisata Baru</button></h3>
     </div>
   </div>
 </div>
@@ -117,5 +117,4 @@
 
 </body>
 </html>
-    
 {% endblock content %}
