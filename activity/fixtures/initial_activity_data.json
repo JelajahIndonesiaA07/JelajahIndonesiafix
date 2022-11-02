@@ -1,0 +1,26 @@
+[
+    {
+        "model":"activity.task",
+        "pk":1,
+        "fields":{
+            "title":"iPhone 14 Pro Maag",
+            "description": "Bikin sakit Maag karena harganya mahal."
+        }
+},
+{
+        "model":"activity.task",
+        "pk":2,
+        "fields":{
+            "title":"Topi Bundar",
+            "description": "Bundar topi saya, kalau tidak bundar bukan topi saya."
+        }
+    },
+    {
+        "model":"activity.task",
+        "pk":3,
+        "fields":{
+            "title":"Kasur Lipat",
+            "description": "Berapa lapis? Ratusan!"
+        }
+    }
+]

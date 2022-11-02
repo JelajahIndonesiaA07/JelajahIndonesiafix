@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Registrasi Akun</title>
+{% endblock meta %}
+
+{% block content %}
+<style>
+
+h1 {
+    text-align: center;
+    vertical-align: middle;   
+    box-sizing: border-box;
+}
+
+table {
+    text-align: left;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+  }
+
+
+.container {
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 170px auto;
+  color: aliceblue;
+  vertical-align: middle;
+}
+
+
+.wrapper {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.642);
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px 1px rgba(210, 17, 184, 0.1);
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.submit {
+  background-color: rgba(0, 0, 0, 0.547);
+  border-radius: 75px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 22px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+
+}
+
+.submit:hover {
+  transform: translateY(-0.15em);
+}
+
+td {
+    color: aliceblue;
+}
+
+
+</style>
+<body style="background-image: url(https://www.pajakku.com/upload/images/cdf4f6ffb119b4806354adf43e8c850b);">
+
+
+    <div class="container">
+        <div class="wrapper">
+    <h1>Formulir Registrasi</h1>  
+
+        <form method="POST" >  
+            {% csrf_token %}  
+            <table>  
+                {{ form.as_table }}  
+                <tr>  
+                    <td></td>
+                    <td>
+                        
+                        <button type="submit" class="submit" value="Daftar">Submit</button>
+                    
+                    </td>  
+                </tr>  
+            </table>
+        </form>
+
+</div>  
+</body>
+{% endblock content %}

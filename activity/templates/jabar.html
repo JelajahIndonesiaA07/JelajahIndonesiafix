@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<script  src="{% static 'js/script.js' %}"></script>
+<style>
+  
+</style>
+</head>
+<body>
+  <script>
+     function onYouTubeIframeAPIReady() {
+    console.log('onYouTubeIframeAPIReady');
+    perahu = new YT.Player('perahu', {
+        videoId: 'hjiAbR_oRJ4'
+    }),
+    gede= new YT.Player('gede', {
+            videoId: '1cqmAaXmokI'
+    }),
+    papandayan = new YT.Player('papandayan', {
+        videoId: '6Ana8ikQQxY'
+        }),
+    braga = new YT.Player('braga', {
+      videoId: '5lKbWJl-87E'
+      }),
+      kebun = new YT.Player('kebun', {
+        videoId: '5TkcYqIRReg'
+    });
+    sate = new YT.Player('sate', {
+        videoId: 'OuyH5sqUtYc'
+    });
+    }
+    
+    
+    // 7OiJZH8JXpw
+  </script>
+  <div class="d-flex justify-content-center">
+    <nav class=" navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mainpage:show_mainpage' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lokasi Wisata</a>
+          </li>
+  
+          <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Things To Do
+            </a>
+            <div class="dropdown-menu sm-menu">
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+              <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+            </div>
+          </li>
+  
+  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}">Tempat Kuliner</a>
+        </li>
+  
+  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'emergencycall:show_hospital' %}">Kontak Rumah Sakit</a>
+        </li>
+  
+        <li class="nav-item dropdown dmenu">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Dashboard
+          </a>
+          <div class="dropdown-menu sm-menu">
+            <a class="dropdown-item" href="#">User Form</a>
+            <a class="dropdown-item" href="#">Form Summary</a>
+            <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Login/Logout</a>
+          </div>
+        
+        </ul>
+        <a class="navbar-brand" href="#">
+          <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png" width="30" height="30" alt="logo">
+          Welcome {{user.get_username}}
+        </a>
+        
+      </div>
+    </nav>
+  </div>
+  <p class="h1"
+  style="color: #e65151">Jawa Barat</p>
+
+
+<div class="container">
+<div class="d-flex justify-content-center">
+ 
+</div>
+  
+<div class="d-flex column flex-wrap justify-content-evenly align-content-evenly">
+  
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+  <div class="prime"></div>
+  <div class="front">
+    <img src="https://c4.wallpaperflare.com/wallpaper/370/604/56/mount-tangkuban-perahu-wallpaper-preview.jpg" class="cover">
+  </div>
+
+  <div class="back">
+    <div class="trailer" id="perahu">
+    </div>
+
+    <div class="title">
+      <h3>Tangkuban Perahu</h3>
+    </div>
+
+    <div class="description">
+      <p style="color:white">Hal yang dapat dilakukan adalah mengambil foto dan menikmati makanan lokaldi Kawah Ratu, Menikmati Pijat Lumpur di Kawah Domas, Bersantai dan Manjakan Diri Anda di Pemandian Air Panas Ciater</p>
+    
+    </div>
+
+  </div>
+
+  <div class="background"></div>
+  
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+    <div class="prime"></div>
+    <div class="front">
+      <img src="https://asset.kompas.com/crops/eFe1G3aL4GZFcinCtSegHcN7DNE=/5x0:1000x663/780x390/data/photo/2020/10/20/5f8eb67f00b85.jpg" 
+      alt="" class="cover">
+    </div>
+  
+    <div class="back">
+      <div class="trailer" id="gede">
+      </div>
+  
+      <div class="title">
+        <h3>Gunung Gede</h3>
+      </div>
+      <div class="description">
+        <p style="color:white" >Wisata alam hujan yang indah, danau biru, air terjun, sumber air panas, kawah yang menakjubkan, padang rumput alpine Suryakencana, menikmati matahari terbit dan terbenan dari puncak Gunung Gede yang indah</p>
+      </div>
+  
+    </div>
+  
+    <div class="background"></div>
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://c0.wallpaperflare.com/preview/762/297/275/indonesia-mount-papandayan-fog-trees.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="papandayan">
+          </div>
+      
+          <div class="title">
+            <h3>gunung Papandayan</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Merupakan gunung dengan trek pendakian yang santai, dengan spot foto yang indah di hutan mati serta padang edelweiss, menikmati wisata kolam air panas, serta mengunjungi danau maupun ke puncak gunung</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+
+
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://www.superlive.id/storage/articles/577b2c10-affe-42eb-9baf-afb0bf0add38.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="braga">
+        </div>
+    
+        <div class="title">
+          <h3>Braga</h3>
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dapat dilakukan adalah menikmati banyak kuliner. Di tiap sudut Jalan Braga hampir bisa ditemui kafe, restoran, hingga kedai-kedai minuman mulai dari jus, boba hingga kopi. Salah satu kafe kopi yang ikonik di Jalan Braga dengan ciri khas Jawanya adalah Kopi Toko Djawa., mengambil foto ciamik di jalan braga, bersantai di tempat duduk di jalan braga, serta belanja di braga citywalk</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://i.pinimg.com/originals/00/b8/54/00b8545d2779b2c063e739d5e2075243.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="kebun">
+        </div>
+    
+        <div class="title">
+          <h3>Kebun Raya Bogor</h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dapat dilakukan ialah melihat koleksi tumbuhan dan istana bogor, pikinik, bersepeda, keliling kebun dengan mobil sewa, mengunjungi makan belanda, merasakan cai kahuripan, berburu spot foto, nongkrong di kafe dan belanja oleh-oleh</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+  <div class="d-inline-block">
+    <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://www.ekstensif.com/wp-content/uploads/2021/01/wallpapertip_wallpaper-gedung_1825587-1140x570.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="sate">
+          </div>
+      
+          <div class="title">
+            <h3>Gedung Sate</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Hal yang dapat dilakukan adalah mengunjungi museum dan teras atap, berfoto di gedung berasitektur hindia belanda, wisata kuliner, dan mengunjungi taman lansia</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+</div>
+
+
+  <div class="d-inline-block">
+    <span class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-flex main-content">
+              <div class="content-text p-4">
+                <h5>Tambah Task</h5>
+
+                <form method="post" id="todolist_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukkan nama barang"
+                      name="title"
+                      id="title"
+                    />
+                  </div>
+                  <div class="form-group">
+                  <label for="description" class="form-label">description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan description barang"
+                    name="description"
+                    id="description"
+                  />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+
+          </div>
+        </div>
+      </span>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+{% endblock content %}
