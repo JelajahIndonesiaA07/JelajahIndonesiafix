@@ -1,11 +1,12 @@
 <h1 align="center">🇮🇩 Jelajah-Indonesia 🇮🇩 </h1>
+<h3 align="center">Tugas Kelompok PBP A07 </h3>
+<div align="center">
+
+  <a href="">[![Status deployment](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/workflows/Deploy/badge.svg)](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/actions/workflows/dpl.yml)</a>
+
+</div>
 
 ![image](https://user-images.githubusercontent.com/115601942/199528524-551db591-0baa-4fa4-9647-850f0d3102d3.jpeg)
-
-
-
-### Tugas Kelompok PBP A07
-[![Status deployment](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/workflows/Deploy/badge.svg)](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/actions/workflows/dpl.yml)
 
 ## Link Aplikasi
 <!-- [![Aplikasi Heroku](https://img.shields.io/badge/heroku-Jelajah-Indonesia-blue?logo=heroku&logoColor=white)](https://cleanifyid.herokuapp.com/) -->
