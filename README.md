@@ -47,7 +47,17 @@ Jelajah-Indonesia bertujuan untuk memperkenalkan Indonesia dengan memberikan rek
 - Lalu saat _user_ ingin membuat akun, _user_ akan disambut dengan formulir untuk mengetahui data-data _user_ dan _user_ akan bisa mengakses keseluruhan web.
 
 ## 💡 Modules
-Website untuk _user_ yang memiliki akun akan berisikan modul-modul berupa:
+
+###  Website ini berisikan _home page_ yang meminta _user_ untuk membuat akun agar bisa mengakses web secara keseluruhan:
+
+| | Home Page | 
+|---|---|
+| 1 | Home Page (Untuk user yang belum login account) |
+|  | Form Registrasi |
+| 2 | Home Page (untuk user yang sudah login account) |
+
+- Lalu saat _user_ ingin membuat akun, _user_ akan disambut dengan formulir untuk mengetahui data-data _user_ dan _user_ akan bisa mengakses keseluruhan web.
+### Website untuk _user_ yang memiliki akun akan berisikan modul-modul berupa:
 | | Modules | Oleh |
 |---|---|---|
 | 1 | Kuisioner Data User | Ied Mubaraque Sultan Salahuddine El Ayyubie |
