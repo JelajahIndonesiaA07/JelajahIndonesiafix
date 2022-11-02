@@ -1,8 +1,16 @@
-# 🇮🇩 Jelajah-Indonesia 🇮🇩
+<h1 align="center">🇮🇩 Jelajah-Indonesia 🇮🇩 </h1>
+
+![image](https://user-images.githubusercontent.com/115601942/199528524-551db591-0baa-4fa4-9647-850f0d3102d3.jpeg)
+
+
+
 ### Tugas Kelompok PBP A07
 [![Status deployment](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/workflows/Deploy/badge.svg)](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/actions/workflows/dpl.yml)
 
-## ⛓ Tools
+## Link Aplikasi
+<!-- [![Aplikasi Heroku](https://img.shields.io/badge/heroku-Jelajah-Indonesia-blue?logo=heroku&logoColor=white)](https://cleanifyid.herokuapp.com/) -->
+[![Heroku App Status](http://heroku-shields.herokuapp.com/jelajahindonesia)](https://jelajahindonesia.herokuapp.com)
+## ⛓ Languages & Tools
 
 
 ## 👥 Nama anggota kelompok
@@ -41,4 +49,4 @@
 ## Manfaat web kami adalah untuk memperkenalkan Indonesia serta tempat-tempat menarik dan aktivitas yang bisa mengisi waktu untuk para partisipan G20 yang akan diadakan di Bali nanti.
 
 ### Sumber
-- https://www.g20.org/bali-summit/
+- [g20](https://www.g20.org/bali-summit/)
