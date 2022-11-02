@@ -23,4 +23,5 @@ urlpatterns = [
     path('tempat_kuliner/', include('tempat_kuliner.urls')),
     path('mainpage/', include('mainpage.urls')),
     path("emergencycall/", include("emergencycall.urls")),
+
 ]
