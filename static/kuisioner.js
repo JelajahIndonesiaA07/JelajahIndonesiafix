@@ -21,14 +21,14 @@ $(document).ready( () =>{
     // let radio = [3, 4, 6];
     
     let pertanyaanCounter = 0;
-    let nama = "";
-    let umur = 0;
-    let gender = "";
-    let vaksin = "";
-    let negara = "";
-    let tujuan = "";
-    let provinsi = "";
-    let kontak = "";
+    let nama = "-";
+    let umur = "-";
+    let gender = "-";
+    let vaksin = "-";
+    let negara = "-";
+    let tujuan = "-";
+    let provinsi = "-";
+    let kontak = "-";
     
     $("#next-q").click(function(){
         console.log(pertanyaanCounter);
@@ -113,6 +113,8 @@ $(document).ready( () =>{
         console.log(vaksin);
         negara = $('select[name=country-selector] option').filter(':selected').val();
         console.log(negara);
+        tujuan = $("input[type='radio'][name='tujuan']:checked").val();
+        console.log(tujuan);
         provinsi = $('select[name=provinsi-selector] option').filter(':selected').val();
         console.log(provinsi);
 

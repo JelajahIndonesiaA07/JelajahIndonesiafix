@@ -5,7 +5,7 @@ from django.db import models
 
 
 class kuisioner(models.Model):
-    nama = models.CharField(max_length=255)
+    nama = models.TextField()
     umur = models.IntegerField()
     gender = models.CharField(max_length=10)
     vaksin = models.CharField(max_length=10)

@@ -23,16 +23,20 @@ $(document).ready( () =>{
     console.log(tujuan)
     console.log(prov)
     console.log(kontak)
-
-    $("#username").text(`Halo, ${nama}`)
-    $("#nama").text(`${nama}`);
-    $("#umur").text(`${umur}`);
-    $("#gender").text(`${gender}`);
-    $("#vaksin").text(`${vaksin}`);
-    $("#negara").text(`${negara}`);
-    $("#tujuan").text(`${tujuan}`);
-    $("#prov").text(`${prov}`);
-    $("#kontak").text(`${kontak}`);
+    
+    $("#nama").text(`: ${nama}`);
+    $("#umur").text(`: ${umur}`);
+    $("#gender").text(`: ${gender}`);
+    if (vaksin === "sudah"){
+        $("#vaksin").text(": ✅");
+    }
+    else {
+        $("#vaksin").text(": ❌");
+    }
+    $("#negara").text(`: ${negara}`);
+    $("#tujuan").text(`: ${tujuan}`);
+    $("#prov").text(`: ${prov}`);
+    $("#kontak").text(`: ${kontak}`);
     $('button').text("Dapatkan info lokasi tempat wisata");
     
     $("#con-hasil").slideDown(1000, () =>{
