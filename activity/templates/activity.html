@@ -1,0 +1,374 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<script  src="{% static 'js/script.js' %}"></script>
+
+</head>
+<body>
+  <script>
+     function onYouTubeIframeAPIReady() {
+    console.log('onYouTubeIframeAPIReady');
+    player = new YT.Player('player', {
+        videoId: 'r_pRpeEJCuw'
+    }),
+    players = new YT.Player('players', {
+            videoId: 'QthPXicgrzg'
+    }),
+    playerss = new YT.Player('playerss', {
+        videoId: 'td9pyY-r0nE'
+        }),
+    kepseribu = new YT.Player('kepseribu', {
+      videoId: '_ywLZsITNVw'
+      }),
+    masjid = new YT.Player('masjid', {
+        videoId: 'pecY2ws61Bg'
+    });
+    museum = new YT.Player('museum', {
+        videoId: '7OiJZH8JXpw'
+    });
+    
+    }
+    
+    
+    // 7OiJZH8JXpw
+  </script>
+    <nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'mainpage:show_mainpage' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontak Rumah Sakit</a>
+      </li>
+      <li class="nav-item dropdown dmenu"">
+        <a class="nav-link dropdown-toggle" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}" id="navbardrop" data-toggle="dropdown">Tempat Kuliner</a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">Jakarta</a>
+          <a class="dropdown-item" href="#">Bali</a>
+          <a class="dropdown-item" href="#">Jawa Barat</a>
+          <a class="dropdown-item" href="#">Jawa Tengah</a>
+          <a class="dropdown-item" href="#">Jogja</a>
+          <a class="dropdown-item" href="#}">Jawa Timur</a>
+          <a class="dropdown-item" href="#">Saran</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Things To Do
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <a class="navbar-brand" href="#">
+        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png" width="30" height="30" alt="logo">
+        {{user.get_username}}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-4">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Log Out</a>
+            </div>
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <p class="h1"
+  style="color: #e65151">Jakarta</p>
+
+
+<div class="container">
+<div class="d-flex justify-content-center">
+ 
+</div>
+  
+<div class="d-flex column flex-wrap justify-content-evenly align-content-evenly">
+  
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+  <div class="prime"></div>
+  <div class="front">
+    <img src="https://ak.picdn.net/shutterstock/videos/24669926/thumb/1.jpg alt="" class="cover">
+  </div>
+
+  <div class="back">
+    <div class="trailer" id="player">
+    </div>
+
+    <div class="title">
+      <h3>Monumen Nasional</h3>
+
+      
+    </div>
+
+    <div class="description">
+      <p style="color:white">Di Monas kita dapat melihat gedung pencakar langit, mengunjungi museum nasional yang terletak di bagian monas, melihat air mancur menari pada malam hari, serta naik kereta wisata</p>
+    
+    </div>
+
+  </div>
+
+  <div class="background"></div>
+  
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+    <div class="prime"></div>
+    <div class="front">
+      <img src="https://c0.wallpaperflare.com/preview/41/187/641/indonesia-ancol-beach-city.jpg" 
+      alt="" class="cover">
+    </div>
+  
+    <div class="back">
+      <div class="trailer" id="players">
+      </div>
+  
+      <div class="title">
+        <h3>Dunia Fantasi</h3>
+  
+        
+      </div>
+  
+      <div class="description">
+        <p style="color:white" >Tempat wisata di Jakarta Utara ini terkenal dengan sebutan Dufan dan merupakan pusat hiburan dan rekreasi outdoor terbesar di tanah air dan menyediakan wahana permainan seru saja tetapi juga bersifat edukatif.</p>
+      </div>
+  
+    </div>
+  
+    <div class="background"></div>
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://t3.ftcdn.net/jpg/02/34/59/46/360_F_234594611_Zx3JMvEPLrZ6RTaxi6DQYG5Y9ooiukEJ.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="playerss">
+          </div>
+      
+          <div class="title">
+            <h3>Kota Tua</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Hal yang dapat dilakukan di kota tua ialah Naik Sepeda onthel, memberi makan burung, keliling museum, berfoto dengan manusia patung, wisata kuliner, santai di taman fatahillah</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+
+
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://pulauseributraveling.com/wp-content/uploads/pulau-melinjo-kepulauan-seribu-jakarta.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="kepseribu">
+        </div>
+    
+        <div class="title">
+          <h3>Pulai Seribu</h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dapat dilakukan di Pulai Seribu adalah Habiskan Waktu Bersama Ikan Hiu, Memancing Ikan-Ikan Laut Istimewa, Menikmati Surga Bawah Laut, Uji Keberanian di Jembatan Cinta</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src=https://ak.picdn.net/shutterstock/videos/23786203/thumb/1.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="masjid">
+        </div>
+    
+        <div class="title">
+          <h3>Masjid Istiqlal</h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Masjid terbesar di Asia Tenggara. Dibangun untuk tempat ibadah dan pengingat perjuangan dan kerukunan anak bangsa. Tidak jauh dari Istana Negara, sebuah masjid besar berdiri megah, indah,agung serta tamannya bak hutan kota lengkap dengan kolam air mancurnya. </p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+  <div class="d-inline-block">
+    <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="http://travelinkmagz.com/wp-content/uploads/2020/04/JKT_Taman-Arca_1920x1080px_1.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="museum">
+          </div>
+      
+          <div class="title">
+            <h3>Museum Nasional Indonesia</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Museum Nasional Republik Indonesia, atau Museum Gajah, adalah sebuah museum arkeologi, sejarah, etnografi, dan geografi yang terletak di Jakarta Pusat dan persisnya di Jalan Merdeka Barat 12. Museum ini merupakan museum pertama dan terbesar di Asia Tenggara.</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+</div>
+
+
+  <div class="d-inline-block">
+    <span class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-flex main-content">
+              <div class="content-text p-4">
+                <h5>Tambah Task</h5>
+
+                <form method="post" id="todolist_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukkan nama barang"
+                      name="title"
+                      id="title"
+                    />
+                  </div>
+                  <div class="form-group">
+                  <label for="description" class="form-label">description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan description barang"
+                    name="description"
+                    id="description"
+                  />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+
+          </div>
+        </div>
+      </span>
+</div>
+
+
+</div>
+
+
+
+</body>
+
+{% endblock content %}

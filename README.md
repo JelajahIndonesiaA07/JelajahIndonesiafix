@@ -32,7 +32,7 @@ Nama anggota kelompok:
 | 2 | Tempat Wisata |
 | 3 | Aktivitas yang bisa dilakukan pada tempat wisata |
 | 4 | Tempat Kuliner |
-| 5 | Kontak rumah sakit dan aparat kepolisian (_Emergency Contact_ setempat) |
+| 5 | Kontak rumah sakit |
 
 ## Manfaat web kami adalah untuk memperkenalkan Indonesia serta tempat-tempat menarik dan aktivitas yang bisa mengisi waktu untuk para partisipan G20 yang akan diadakan di Bali nanti.
 

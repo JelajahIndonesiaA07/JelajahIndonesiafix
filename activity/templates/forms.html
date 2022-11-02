@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<head>
+  
+  {% block meta %}
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  {% endblock meta %}
+
+</head>
+
+<script>
+  // function loadData(){
+  //     $('#task_card').empty();
+  //     $('#table_card').empty();
+  //     let table_card ="";
+  //     $.ajax({
+  //         url: "{% url 'activity:show_json' %}",
+  //         type: "GET",
+  //         dataType: "json",
+  //         success: function(data){
+  //           for (let i of data){
+  //                 table_card +=`
+  //                 <li class="card">
+  //                   <div">
+  //                     <h3 class="card-title">${i.fields.title}</h3>
+  //                     <div class="card-content">
+  //                       <p>${i.fields.description}</p>
+  //                   </div>
+  //                 </li>`;
+  //                       }
+  //           $('.table_card').append(table_card);
+  //         },
+  //         error: function(data){
+  //             console.log('Error?');
+  //         }
+  //     })
+  // }
+  $(document).ready(function () {
+    getActivity()
+  });
+  //   $.ajax({
+  //     type: 'GET',
+  //     url: '/emergencycall/get-hospital/',
+  //     // data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+  //     error: console.log('ERROR'),
+  //   }).done((data) => {
+  //     showHospital(data);
+  //   });
+  // });
+
+  function getActivity() {
+        $.ajax({
+            type: "GET",
+            url: "/activity/json/"
+        }).done((data) => {
+            showActivity(data);
+        });
+    }
+
+  function showActivity(Activity) {
+        const displayTable = $('.wrapper');
+        displayTable.empty();
+        Activity.forEach(data => {
+            const hospitalCard = `
+            <div class="card" style="width: 18rem; margin-right: auto; margin-left: auto; padding-bottom: 20; margin-top: 20px;">
+            <div class="card-body">
+            <h4 class="card-font">${data.fields.title}</h4>
+            <p class="card-font">${data.fields.description}</p>
+            <input type="submit" value="Delete Activity"  class="submit" onclick="delete_activity(${data.pk})" />
+        </div>
+      </div>`
+      ;
+            displayTable.append(hospitalCard);
+        })
+    };
+
+    function newActivity() {
+      const form = $('.create-form');
+      $.ajax({
+        type: "POST",
+        url: '/activity/submit/',
+        data: form.serialize(), csrfmiddlewaretoken: '{{ csrf_token }}',
+        error: console.log('error'),
+        success: console.log('bisa'),
+      }).done(function (data) {
+        form.trigger('reset');
+        getActivity();
+      });
+      $("#staticBackdrop").modal("hide");
+    }
+
+    function delete_activity(id) {
+        $.ajax({
+            type: "GET",
+            url: "/activity/hapus/" + id,
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
+        }).done((data) => {
+            getActivity()
+        })
+    }
+
+</script>
+<style>
+      .social-part .fa{
+      padding-right:20px;
+    }
+    ul li a{
+      margin-right: 20px;
+    }
+</style>
+<body>
+  <div class="d-flex justify-content-center">
+    <nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'mainpage:show_mainpage' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontak Rumah Sakit</a>
+      </li>
+      <li class="nav-item dropdown dmenu"">
+        <a class="nav-link dropdown-toggle" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}" id="navbardrop" data-toggle="dropdown">Tempat Kuliner</a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">Jakarta</a>
+          <a class="dropdown-item" href="#">Bali</a>
+          <a class="dropdown-item" href="#">Jawa Barat</a>
+          <a class="dropdown-item" href="#">Jawa Tengah</a>
+          <a class="dropdown-item" href="#">Jogja</a>
+          <a class="dropdown-item" href="#}">Jawa Timur</a>
+          <a class="dropdown-item" href="#">Saran</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Things To Do
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <a class="navbar-brand" href="#">
+        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png" width="30" height="30" alt="logo">
+        {{user.get_username}}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-4">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Log Out</a>
+            </div>
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<h3><button type="button" class="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tambah Saran</button></h3>
+
+<div class="wrapper">
+
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add new hospital data</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="card-body">
+          <!-- <form class="newHospital" method="POST"> -->
+            <form class="create-form">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                    <label class="form-label" for="form.title">Title</label>
+                    {% csrf_token %}
+                    <td>{{ form.title }}</td> 
+                    </div>
+                    </div>
+                    </div>
+                
+                    <div class="form-outline ">
+                    <label class="form-label" for="form.description">Description</label>
+                    <td>{{ form.description }}</td>
+                </div>
+            </form>
+      </div>
+        <h3><button type="button" class="submit" data-bs-dismiss="modal">Close</button> 
+        <button type="button" class="submit" onclick="newActivity()" data-bs-dismiss="modal">Add Hospital</button></h3>
+    </div>
+  </div>
+</div>
+
+</body>
+{% endblock content %}

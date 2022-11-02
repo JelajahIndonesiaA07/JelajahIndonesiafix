@@ -1,0 +1,375 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<script  src="{% static 'js/script.js' %}"></script>
+<style>
+  
+</style>
+</head>
+<body>
+  <script>
+     function onYouTubeIframeAPIReady() {
+    console.log('onYouTubeIframeAPIReady');
+    monkey = new YT.Player('monkey', {
+        videoId: 'Gad3In4VBkE'
+    }),
+    agung= new YT.Player('agung', {
+            videoId: 'Binkw7SEI7c'
+    }),
+    seminyak = new YT.Player('seminyak', {
+        videoId: 'VCJwzKzLots'
+        }),
+    kelingking = new YT.Player('kelingking', {
+      videoId: 'twTtjybmlqA'
+      }),
+      waterboom = new YT.Player('waterboom', {
+        videoId: '3ixm2y2NKkQ'
+    });
+    uluwatu = new YT.Player('uluwatu', {
+        videoId: 'YI0Oume2TNE'
+    });
+    }
+    
+    
+    // 7OiJZH8JXpw
+  </script>
+  <nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'mainpage:show_mainpage' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontak Rumah Sakit</a>
+      </li>
+      <li class="nav-item dropdown dmenu"">
+        <a class="nav-link dropdown-toggle" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}" id="navbardrop" data-toggle="dropdown">Tempat Kuliner</a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">Jakarta</a>
+          <a class="dropdown-item" href="#">Bali</a>
+          <a class="dropdown-item" href="#">Jawa Barat</a>
+          <a class="dropdown-item" href="#">Jawa Tengah</a>
+          <a class="dropdown-item" href="#">Jogja</a>
+          <a class="dropdown-item" href="#}">Jawa Timur</a>
+          <a class="dropdown-item" href="#">Saran</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Things To Do
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <a class="navbar-brand" href="#">
+        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png" width="30" height="30" alt="logo">
+        {{user.get_username}}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-4">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Log Out</a>
+            </div>
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <p class="h1"
+  style="color: #e65151">Bali</p>
+
+
+<div class="container">
+<div class="d-flex justify-content-center">
+ 
+</div>
+  
+<div class="d-flex column flex-wrap justify-content-evenly align-content-evenly">
+  
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+  <div class="prime"></div>
+  <div class="front">
+    <img src="https://c0.wallpaperflare.com/preview/505/653/81/dragon-bridge-surrounded-by-green-trees.jpg"" class="cover">
+  </div>
+
+  <div class="back">
+    <div class="trailer" id="monkey">
+    </div>
+
+    <div class="title">
+      <h3>Hutan Monyet Ubud</h3>
+
+      
+    </div>
+
+    <div class="description">
+      <p style="color:white">Wisata cagar alam yang berlokasi di komplek candi Ubud dan terdapat sekitar 600 ekor monyet yang dapat berinteraksi dengan kita. Kita dapat Mengunjungi tempat suci di tengah hutan Sangeh dan berburu spot foto</p>
+    
+    </div>
+
+  </div>
+
+  <div class="background"></div>
+  
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+    <div class="prime"></div>
+    <div class="front">
+      <img src="https://besthqwallpapers.com/Uploads/16-10-2017/24264/thumb2-gunung-agung-4k-stratovolcano-mount-agung-bali.jpg" 
+      alt="" class="cover">
+    </div>
+  
+    <div class="back">
+      <div class="trailer" id="agung">
+      </div>
+  
+      <div class="title">
+        <h3>Gunung Agung</h3>
+  
+        
+      </div>
+  
+      <div class="description">
+        <p style="color:white" >Gunung Agung ialah gunung terbesar dan tertinggi di Bali. Kita dapat menikmati pemandangan  dari puncak Gunung Agung dan melihat gunung Rinjani di Lombok, matahari terbit, Gunung Batur dan Danau Batur</p>
+      </div>
+  
+    </div>
+  
+    <div class="background"></div>
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://c4.wallpaperflare.com/wallpaper/136/420/4/asia-bali-beach-beach-club-wallpaper-preview.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="seminyak">
+          </div>
+      
+          <div class="title">
+            <h3>Seminyak Bali</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Merupakan kawasan pariwisata di Bali berupa kawasan resort pantai. Kita bisa melakukan scuba diving, horse riding, surfing dan menikmati restoran, resort serta villa mewah</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+
+
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://c0.wallpaperflare.com/preview/74/724/865/ocean-sea-outdoors-land.jpg" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="kelingking">
+        </div>
+    
+        <div class="title">
+          <h3>Pantai kelingking</h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dilaukan adalah snorkeling/diving di mantapoint ditemani dengan ikan pari, Kelingking Cliff Point melihat tebing yang menjorok ke lautan dengan bentuk seperti dinosaurus, serta melihat sunset dan menikmati pantai pasir putih  </p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://images.says.com/uploads/story_source/source_image/573580/44e8.jpg"" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="waterboom">
+        </div>
+    
+        <div class="title">
+          <h3>Waterboom Bali </h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Dengan luas 3,8 hektar, Waterbom Bali dirancang untuk memberikan pengalaman yang tak terlupakan bagi para pengunjung. Baik pengunjung yang ingin memacu adrenalin di seluncuran paling curam di Asia- The Climax, hingga bagi para keluarga yang ingin membawa anak-anak untuk bermain di area yang luas, ataupun pengunjung yang ingin sekedar berendam dan bersantai jauh dari kebisingan.</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+  <div class="d-inline-block">
+    <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://c0.wallpaperflare.com/preview/353/313/283/bali-uluwatu-indonesian-travel.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="uluwatu">
+          </div>
+      
+          <div class="title">
+            <h3>Uluwatu Bali</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Hal yang dapat dilakukan ialah melihat Pura Uluwatu Dan Tari Kecak, Habiskan Hari Di Sundays Beach Club, Makan Di Restoran Atau Habiskan Hari Di Rumah Tebing Ulu, Jelajahi Pantai, Pagi Di Kafe, Matahari Terbenam Di Single Fin</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+</div>
+
+
+  <div class="d-inline-block">
+    <span class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-flex main-content">
+              <div class="content-text p-4">
+                <h5>Tambah Task</h5>
+
+                <form method="post" id="todolist_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukkan nama barang"
+                      name="title"
+                      id="title"
+                    />
+                  </div>
+                  <div class="form-group">
+                  <label for="description" class="form-label">description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan description barang"
+                    name="description"
+                    id="description"
+                  />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+
+          </div>
+        </div>
+      </span>
+</div>
+
+
+</div>
+
+
+
+</body>
+
+{% endblock content %}

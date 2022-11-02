@@ -1,0 +1,370 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<script  src="{% static 'js/script.js' %}"></script>
+<style>
+  
+</style>
+</head>
+<body>
+  <script>
+     function onYouTubeIframeAPIReady() {
+    console.log('onYouTubeIframeAPIReady');
+    ijen = new YT.Player('ijen', {
+        videoId: 'caR6drtTntY'
+    }),
+    angkut= new YT.Player('angkut', {
+            videoId: 'I9SCknjlWdg'
+    }),
+    jodiban = new YT.Player('jodiban', {
+        videoId: 'UpncSaRvjCE'
+        }),
+    coban = new YT.Player('coban', {
+      videoId: 'BA2r0D0Vrwc'
+      }),
+      tumpak = new YT.Player('tumpak', {
+        videoId: 'p5ELzeuVwnE'
+    });
+    papuma = new YT.Player('papuma', {
+        videoId: '9yN6Gquqxvc'
+    });
+    }
+    
+    
+    // 7OiJZH8JXpw
+  </script>
+  <nav class=" navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'mainpage:show_mainpage' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Our Service
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">service2</a>
+          <a class="dropdown-item" href="#">service 2</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontak Rumah Sakit</a>
+      </li>
+      <li class="nav-item dropdown dmenu"">
+        <a class="nav-link dropdown-toggle" href="{% url 'tempat_kuliner:show_tempat_kuliner' %}" id="navbardrop" data-toggle="dropdown">Tempat Kuliner</a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="#">Jakarta</a>
+          <a class="dropdown-item" href="#">Bali</a>
+          <a class="dropdown-item" href="#">Jawa Barat</a>
+          <a class="dropdown-item" href="#">Jawa Tengah</a>
+          <a class="dropdown-item" href="#">Jogja</a>
+          <a class="dropdown-item" href="#}">Jawa Timur</a>
+          <a class="dropdown-item" href="#">Saran</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Things To Do
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJakarta' %}">Jakarta</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityBali' %}">Bali</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJabar' %}">Jawa Barat</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJateng' %}">Jawa Tengah</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJogja' %}">Jogja</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityJatim' %}">Jawa Timur</a>
+          <a class="dropdown-item" href="{% url 'activity:ShowActivityForms' %}">Saran</a>
+        </div>
+      </li>
+      </ul>
+      <a class="navbar-brand" href="#">
+        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png" width="30" height="30" alt="logo">
+        {{user.get_username}}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-4">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Log Out</a>
+            </div>
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <p class="h1"
+  style="color: #e65151">Jawa Timur</p>
+
+
+<div class="container">
+<div class="d-flex justify-content-center">
+ 
+</div>
+  
+<div class="d-flex column flex-wrap justify-content-evenly align-content-evenly">
+  
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+  <div class="prime"></div>
+  <div class="front">
+    <img src="https://c4.wallpaperflare.com/wallpaper/924/880/983/5bd338c791048-wallpaper-preview.jpg" class="cover">
+  </div>
+
+  <div class="back">
+    <div class="trailer" id="ijen">
+    </div>
+
+    <div class="title">
+      <h3>Bromo</h3>
+    </div>
+
+    <div class="description">
+      <p style="color:white">Hal yang dapat dilakukan adalah Berpetualang Naik Mobil Jip, Menyusuri Eksotisme Pasir Berbisik Sambil Berburu Foto, Berburu Panorama Sunrise, camping di Ranu Kumbolo dan melihat Malam Bertabur Bintang, Berkunjung ke Pura Luhur Poten, Menyaksikan Upacara Adat Yadnya Kasada</p>
+    
+    </div>
+
+  </div>
+
+  <div class="background"></div>
+  
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+<span class="container">
+<div class="movie">
+
+    <div class="prime"></div>
+    <div class="front">
+      <img src="https://asset.kompas.com/crops/N49sLBf8ZEE4a7RVv-4J3X1qY8M=/12x0:635x415/750x500/data/photo/2020/03/19/5e739f66c953c.jpg" 
+      alt="" class="cover">
+    </div>
+  
+    <div class="back">
+      <div class="trailer" id="angkut">
+      </div>
+  
+      <div class="title">
+        <h3>Museum Angkutr</h3>
+      </div>
+  
+      <div class="description">
+        <p style="color:white" > Hal yang dapat dilakukan adalah Melihat helikopter pertama milik Indonesia, Merasakan sensasi di dalam pesawat kepresidenan, Mengunjungi Istana Buckingham Ratu Elizabeth II,  berkeliling di Gengster Town, Melihat koleksi mobil antik di Gudang Batavia</p>
+      </div>
+  
+    </div>
+  
+    <div class="background"></div>
+</div>
+</span>
+</div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://statik.tempo.co/data/2019/08/24/id_866734/866734_720.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="jodiban">
+          </div>
+      
+          <div class="title">
+            <h3>Kampung Warna-Warni Jodipan</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Hal yang dapat dilakukan adalah Mengunjungi desa pelangi yang penuh warna dan ditupi oleh payung bewarna serta mengunjungi dan berfoto di jembatan yang menghubungkan 3 desa, mengunjungi Kampung Biru Arema</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+
+
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://www.journeyera.com/wp-content/uploads/2018/10/coban-talun-waterfall-01339.jpg.webp" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="coban">
+        </div>
+    
+        <div class="title">
+          <h3>Coban Talun</h3>
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dapat dilakukan adalah Bermain Air atau Berenang, Bersantai, Berjalan Jalan di Taman Bunga, Mengunjungi Apache Camp dan Pagupon Camp, Berburu Foto Cantik</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+<div class="d-inline-block">
+  <span class="container">
+  <div class="movie">
+  
+      <div class="prime"></div>
+      <div class="front">
+        <img src="https://media.istockphoto.com/photos/tumpak-sewu-waterfall-java-picture-id1346436236?b=1&k=20&m=1346436236&s=170667a&w=0&h=lSjBAro_wd79YkT4Kqjt2EhYsS7wZ-52cc0ecQFhN70=" alt="" class="cover">
+      </div>
+    
+      <div class="back">
+        <div class="trailer" id="tumpak">
+        </div>
+    
+        <div class="title">
+          <h3>Tumpak Sewu</h3>
+    
+          
+        </div>
+    
+        <div class="description">
+          <p style="color:white">Hal yang dapat dilakukan adalah Agrowisata Buah Salak, Berburu Foto Keren, Bermain Air, Wisata Kulineran, Bermalam di Dekat Air Terjun</p>
+        </div>
+    
+      </div>
+    
+      <div class="background"></div>
+  </div>
+</span>
+  </div>
+
+
+
+  <div class="d-inline-block">
+    <span class="container">
+    <div class="movie">
+    
+        <div class="prime"></div>
+        <div class="front">
+          <img src="https://www.superlive.id/storage/superadventure/2018/12/19/x61594cc2f153.jpg.pagespeed.ic.t_Cr4Lnz2s.jpg" alt="" class="cover">
+        </div>
+      
+        <div class="back">
+          <div class="trailer" id="papuma">
+          </div>
+      
+          <div class="title">
+            <h3>Pantai Papuma</h3>
+      
+            
+          </div>
+      
+          <div class="description">
+            <p style="color:white">Hal yang dapat dilakukan adalah Mengintip jajaran perahu nelayan dari atas bukit, Menjelajahi dataran karang eksotis dengan penuh perjuangan, Menikmati panorama sempurna dari ketinggian di Siti Hinggil, Seru-seruan bermain pasir dan ombak di Pasir Putih Malikan, Merasakan nikmat kuliner sekitar di tepi Pantai Papuma, menyusuri perairan menggunakan perahu</p>
+          </div>
+      
+        </div>
+      
+        <div class="background"></div>
+    </div>
+  </span>
+    </div>
+</div>
+
+
+  <div class="d-inline-block">
+    <span class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body py-0">
+            <div class="d-flex main-content">
+              <div class="content-text p-4">
+                <h5>Tambah Task</h5>
+
+                <form method="post" id="todolist_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukkan nama barang"
+                      name="title"
+                      id="title"
+                    />
+                  </div>
+                  <div class="form-group">
+                  <label for="description" class="form-label">description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan description barang"
+                    name="description"
+                    id="description"
+                  />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+
+          </div>
+        </div>
+      </span>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+{% endblock content %}
