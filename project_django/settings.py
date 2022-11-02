@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example_app',
+    'tempat_kuliner',
+    'mainpage',
 ]
 
 MIDDLEWARE = [

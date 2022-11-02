@@ -1,0 +1,182 @@
+[
+    {   
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":1,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Kerak Telor Monumen Nasional",
+            "rating_tempat_kuliner" : "4.5/5",
+            "lokasi_tempat_kuliner" : "Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta"
+        }
+},
+{
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":2,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Penang Bistro",
+            "rating_tempat_kuliner" : "4/5",
+            "lokasi_tempat_kuliner" : "Jl. Kebon Sirih No.59, RT.8/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":3,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Nasi Goreng Kambing Kebon Sirih",
+            "rating_tempat_kuliner" : "4.5/5",
+            "lokasi_tempat_kuliner" : "Jl. Kebon Sirih No.3, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":4,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Nasi Ayam Kedewatan Ibu Mangku",
+            "rating_tempat_kuliner" : "4.7/5",
+            "lokasi_tempat_kuliner" : "Jl. Raya Kedewatan No.18, Kedewatan, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":5,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Restoran Goerih Bali",
+            "rating_tempat_kuliner" : "4.6/5",
+            "lokasi_tempat_kuliner" : "Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":6,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Warung Men wati",
+            "rating_tempat_kuliner" : "4.7/5",
+            "lokasi_tempat_kuliner" : "Jl. Segara Ayu, Sanur, Denpasar Selatan, Kota Denpasar, Bali 80227"
+        }
+},
+{
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":7,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Kopi Klotok",
+            "rating_tempat_kuliner" : "4.7",
+            "lokasi_tempat_kuliner" : "Jalan Kaliurang No.KM.16, Area Sawah, Pakembinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":8,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Bakpia Kurnia Sari",
+            "rating_tempat_kuliner" : "4.8",
+            "lokasi_tempat_kuliner" : "JI. Glagahsari No.91, Warungboto, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55164"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":9,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Gudeg Mbah Lindu",
+            "rating_tempat_kuliner" : "4.7",
+            "lokasi_tempat_kuliner" : "Jl. Sosrowijayan No.41-43, Sosromenduran, Gedong Tengen, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55271"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":10,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Sate Maranggi Bah Use",
+            "rating_tempat_kuliner" : "4.8/5",
+            "lokasi_tempat_kuliner" : "Jl. Terusan Kapiten Halim no. 105, Cihuni, Kec. Pasawahan, Kabupaten Purwakarta, Jawa Barat 41172"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":11,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Warung Lotek Cihapit",
+            "rating_tempat_kuliner" : "4.6/5",
+            "lokasi_tempat_kuliner" : "Jl. Cihapit No.6, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":12,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Surabi Waroeng Setiabudhi",
+            "rating_tempat_kuliner" : "4.7/5",
+            "lokasi_tempat_kuliner" : "Jl. Dr. Setiabudi No.175, Gegerkalong, Kec. Sukasari, Kota Bandung, Jawa Barat 40153"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":13,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Lontong Balap Rajawali",
+            "rating_tempat_kuliner" : "4.6/5",
+            "lokasi_tempat_kuliner" : "Jl. Krembangan Timur No.32D, Krembangan Sel., Kec. Krembangan, Kota SBY, Jawa Timur 60175"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":14,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Rawon setan",
+            "rating_tempat_kuliner" : "4.2/5",
+            "lokasi_tempat_kuliner" : "Jl. Embong Malang No.78/I, Genteng, Kec. Genteng, Kota SBY, Jawa Timur 60261"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":15,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Nasi Krawu Bu Rika",
+            "rating_tempat_kuliner" : "4.4/5",
+            "lokasi_tempat_kuliner" : "Jl. Pahlawan No.18 A, Tlogobendung, Bedilan, Kec. Gresik, Kabupaten Gresik, Jawa Timur 61114"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":16,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Tahu Gimbal Lumayan Pak Man",
+            "rating_tempat_kuliner" : "4.5/5",
+            "lokasi_tempat_kuliner" : "Jl. Plampitan No.54, Bangunharjo, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50139"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":17,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Soto Kerbau Pak Di",
+            "rating_tempat_kuliner" : "4.4/5",
+            "lokasi_tempat_kuliner" : "Pasar Kliwon, Jl. Cempaka, Rendeng, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59311"
+        }
+    },
+    {
+        "model":"tempat_kuliner.tempat_kuliner_Item",
+        "pk":18,
+        "fields":{
+            "user" : "{{ request.user }}",
+            "nama_tempat_kuliner" : "Mie Ongklok Longkrang",
+            "rating_tempat_kuliner" : "4.5/5",
+            "lokasi_tempat_kuliner" : "Jl. Pasukan Ronggolawe No.14, Longkrang, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311"
+        }
+    }
+]
