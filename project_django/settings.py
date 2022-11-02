@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "emergencycall",
     "mainpage",
     'tempat_kuliner',
+    "kuisioner_data_user",
 ]
 
 MIDDLEWARE = [

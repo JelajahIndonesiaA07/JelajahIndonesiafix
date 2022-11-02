@@ -161,8 +161,8 @@
             Dashboard
           </a>
           <div class="dropdown-menu sm-menu">
-            <a class="dropdown-item" href="#">User Form</a>
-            <a class="dropdown-item" href="#">Form Summary</a>
+            <a class="dropdown-item" href="{% url 'kuisioner_data_user:index' %}">User Form</a>
+            <a class="dropdown-item" href="{% url 'kuisioner_data_user:hasil' %}">Form Summary</a>
             <a class="dropdown-item" href="{% url 'mainpage:logout' %}">Login/Logout</a>
           </div>
         
@@ -183,37 +183,30 @@
 </div>
 </div>
 
+<div class="d-flex justify-content-center">
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
+    
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add new hospital data</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Saran Hal yang dapat Dilakukan</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="card-body">
-          <!-- <form class="newHospital" method="POST"> -->
             <form class="create-form">
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                    <label class="form-label" for="form.title">Title</label>
-                    {% csrf_token %}
-                    <td>{{ form.title }}</td> 
-                    </div>
-                    </div>
-                    </div>
-                
-                    <div class="form-outline ">
-                    <label class="form-label" for="form.description">Description</label>
-                    <td>{{ form.description }}</td>
-                </div>
+            {% csrf_token %}
+            <h3 style="color:black">Nama Tempat Wisata</h3>
+            {{ form.title }}
+                <h3 style="color:black">Hal yang Dapat Dilakukan</h3>
+                {{ form.description }}
             </form>
       </div>
         <h3><button type="button" class="submit" data-bs-dismiss="modal">Close</button> 
         <button type="button" class="submit" onclick="newActivity()" data-bs-dismiss="modal">Add Hospital</button></h3>
     </div>
-  </div>
+  
 </div>
-
+</div>
+</div>
 </body>
 {% endblock content %}
