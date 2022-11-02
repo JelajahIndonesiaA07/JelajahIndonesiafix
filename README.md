@@ -1,14 +1,18 @@
-# Jelajah-Indonesia
-## Tugas Kelompok PBP A07
+# 🇮🇩 Jelajah-Indonesia 🇮🇩
+### Tugas Kelompok PBP A07
+[![Status deployment](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/workflows/Deploy/badge.svg)](https://github.com/JelajahIndonesiaA07/Jelajah-Indonesia/actions/workflows/dpl.yml)
 
-Nama anggota kelompok:
+## ⛓ Tools
+
+
+## 👥 Nama anggota kelompok
 | NPM | Nama |
 |---|---|
-| 2106751171 | Muhammad Rafialy Farrel |
-| 2106635985 | Savero Arkabuana |
-| 2106651061 | Soraya Sabrina |
-| 2106752073 | Muhammad Irsyad Mufid |
-| 2106751120 | Ied Mubaraque Sultan Salahuddine El Ayyubie |
+| 2106751171 | [Muhammad Rafialy Farrel](https://github.com/rafialyfarrel) |
+| 2106635985 | [Savero Arkabuana](https://github.com/saveroarkabuana) |
+| 2106651061 | [Soraya Sabrina](https://github.com/sorayasab)|
+| 2106752073 | [Muhammad Irsyad Mufid](https://github.com/IrsyadMufid) |
+| 2106751120 | [Ied Mubaraque Sultan Salahuddine El Ayyubie](https://github.com/Ayyubieied) |
 
 ### [Link Aplikasi](https://jelajahindonesia.herokuapp.com)
 
@@ -26,7 +30,7 @@ Nama anggota kelompok:
 
 ## Website untuk _user_ yang memiliki akun akan berisikan modul-modul berupa:
 
-| | Modules |
+| | Modules | 
 |---|---|
 | 1 | Kuisioner Data User |
 | 2 | Tempat Wisata |
