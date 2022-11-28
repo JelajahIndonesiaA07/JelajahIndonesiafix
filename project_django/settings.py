@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+
 import os
 import dj_database_url
 from pathlib import Path
@@ -27,7 +28,8 @@ SECRET_KEY = 'django-insecure-3@5wx%(^*zl68l(o$^m-3%cvjv0g&mom1ra=oj5f048_al57s7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [f'{APP_NAME}.up.railway.app']
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [f'{APP_NAME}.up.railway.app']
 
 # Application definition
 
