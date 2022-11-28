@@ -10,7 +10,7 @@
 ![image](https://user-images.githubusercontent.com/115601942/199528524-551db591-0baa-4fa4-9647-850f0d3102d3.jpeg)
 
 ## 🔗 Link Aplikasi
-### [**Jelajah-Indonesia**](https://jelajahindonesia.herokuapp.com/)
+### [**Jelajah-Indonesia**](https://jelajah-indonesia.up.railway.app/)
 
 ## ✨ Manfaat
 Jelajah-Indonesia bertujuan untuk memperkenalkan Indonesia dengan memberikan rekomendasi tempat-tempat yang menarik. Tidak hanya itu, Jelajah-Indonesia juga memberikan rekomendasi aktivitas untuk mengisi waktu luang sehingga para partisipan G20 tidak merasa bosan. Dengan begitu, para partisipan memiliki referensi tempat dan aktivitas yang dapat dilakukan. Apabila mengalami masalah kesehatan, para partisipan dapat mengunjungi rumah sakit yang tertera pada *website*. 
