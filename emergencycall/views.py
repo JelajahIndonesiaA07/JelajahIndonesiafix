@@ -61,3 +61,8 @@ def hapus(request, id):
     task = EmergencyCallItem.objects.get(id=id)
     task.delete()
     return show_hospital(request)
+
+def show_hospital_json(request):
+    data = EmergencyCallItem.objects.all()
+    return HttpResponse(serializers.serialize("json", data),
+                        content_type="application/json")

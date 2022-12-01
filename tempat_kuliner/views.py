@@ -44,3 +44,4 @@ def delete_tempat_kuliner(request, id):
     task = tempat_kuliner_Item.objects.get(id=id)
     task.delete()
     return show_tempat_kuliner(request)
+
