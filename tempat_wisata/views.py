@@ -45,3 +45,8 @@ def delete_tempat_wisata(request, id):
     task = tempat_wisata_Item.objects.get(id=id)
     task.delete()
     return show_tempat_wisata(request)
+
+def show_tempat_kuliner_json(request):
+    data = tempat_wisata_Item.objects.all()
+    return HttpResponse(serializers.serialize("json", data),
+                        content_type="application/json")
