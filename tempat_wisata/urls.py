@@ -12,5 +12,4 @@ urlpatterns = [
     path('add-tempat-wisata/', add_tempat_wisata, name='add_tempat_wisata'),
     path('get-tempat-wisata/', get_tempat_wisata, name='get_tempat_wisata'),
     path('delete-tempat-wisata/<int:id>', delete_tempat_wisata, name='delete_tempat_wisata'),
-    path('get-tempat-kuliner-flutter/', show_tempat_wisata_json, name="show_tempat_kuliner_json"),
 ]
