@@ -45,3 +45,7 @@ def delete_tempat_kuliner(request, id):
     task.delete()
     return show_tempat_kuliner(request)
 
+def show_tempat_kuliner_json(request):
+    data = tempat_kuliner_Item.objects.all()
+    return HttpResponse(serializers.serialize("json", data),
+                        content_type="application/json")
