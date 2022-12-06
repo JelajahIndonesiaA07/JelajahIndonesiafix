@@ -12,6 +12,7 @@ from django.views.decorators.csrf import requires_csrf_token
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@csrf_exempt
 def AddActivity_flutter(request):
     if request.method == 'POST':
         newActivity = json.loads(request.body)
