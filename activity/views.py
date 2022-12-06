@@ -8,7 +8,8 @@ from django.http import HttpResponse
 from django.core import serializers
 from activity.models import Task
 from .forms import CreateForm
-
+from django.views.decorators.csrf import requires_csrf_token
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def AddActivity_flutter(request):
@@ -48,7 +49,7 @@ def ShowActivityJatim(request):
     context = {}
     return render(request, "jatim.html",context)
 
-
+@login_required(login_url='/mainpage/login/')
 def ShowActivityForms(request):
     user = request.user
     forms_item = Task.objects.filter(user= user)
@@ -59,7 +60,7 @@ def ShowActivityForms(request):
     }
     return render(request, "forms.html",context)
 
-
+requires_csrf_token
 def AddActivity(request):
     if request.method == "POST":
         form = CreateForm(request.POST)
