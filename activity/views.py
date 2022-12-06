@@ -15,11 +15,11 @@ from django.contrib.auth.decorators import login_required
 @csrf_exempt
 def AddActivity_flutter(request):
     if request.method == 'POST':
-        newActivity = json.loads(request.body)
+        # newActivity = json.loads(request.body)
 
-        new_Activity = Task(
-            title=newActivity['title'],
-            description=newActivity['description'],
+        new_Activity = Task.objects.create(
+            title=request.POST['title'],
+            description=request.POST['description'],
         )
 
         new_Activity.save()
