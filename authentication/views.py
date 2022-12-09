@@ -17,19 +17,8 @@ def register(request):
             return JsonResponse({'status': False, 'message': 'Password tidak sesuai'}, status=400)
         user = User.objects.create_user(username=username, password=password1)
         
-        try:
-            customer = Customer.objects.get(user=user)
-        except:
-            customer = Customer.objects.create(
-                user=user, 
-                name=user.get_username(), 
-                email="None", 
-                phone="None",
-                is_technician=register_as == "Technician"
-            )
         return JsonResponse({'status': True}, status=200)
 
-from mypanel.models import Customer
 
 
 @csrf_exempt
@@ -40,13 +29,10 @@ def login(request):
     if user is not None:
         if user.is_active:
             auth_login(request, user)
-            customer = Customer.objects.filter(user=user)
-            query_cust = customer.values()
             # Redirect to a success page.
             return JsonResponse({
                 "status": True,
                 "message": "Successfully Logged In!",
-                "user": list(query_cust)[0],
             }, status=200)
 
         else:
@@ -58,5 +44,5 @@ def login(request):
     else:
         return JsonResponse({
             "status": False,
-            "message": "Failed to Login, check your email/password."
+            "message": "Failed to Login, check your password."
         }, status=401)
