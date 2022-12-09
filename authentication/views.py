@@ -3,7 +3,6 @@ from django.contrib.auth import authenticate, login as auth_login
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
-from mypanel.models import *
 from django.contrib.auth.models import User
 
 @csrf_exempt
