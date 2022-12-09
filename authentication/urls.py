@@ -1,9 +1,9 @@
 from django.urls import path
-from authentication.views import login
-
+from .views import *
 
 app_name = 'authentication'
 
 urlpatterns = [
-    path('login-flutter', login, name='login'),
+    path('register/', register, name='register'),
+    path('login/', login, name='login'),
 ]
